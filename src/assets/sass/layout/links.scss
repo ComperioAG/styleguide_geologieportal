@@ -14,17 +14,17 @@ a {
  line-height: 1.5;
 
  &:hover {
-   color: darken($cerulean, 5%);
-   text-decoration: underline;
+   color: $cerulean;
+   text-decoration: none;
  }
  &:active, &:visited {text-decoration: none;}
  &:visited {color: $cadillac;}
  p & {
    line-height: 1;
-   text-decoration: underline;
+   text-decoration: none;
  }
  p &:hover {
-   text-decoration: underline;
+   text-decoration: none;
  }
 
  small & ~ span{

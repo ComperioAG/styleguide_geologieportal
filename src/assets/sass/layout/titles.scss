@@ -10,11 +10,19 @@
  =========================================================== */
 
 h1 {
-  font-weight: 100;
+  color: $A01;
+}
+
+h2 {
+  color: $A01;
+}
+
+h3 {
+  color: $black;
 }
 
 h4 {
-  font-weight: 700;
+  color: $black;
 }
 
 h1, h2, h3, h4, h5, h6 {

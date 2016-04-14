@@ -474,7 +474,7 @@ nav {
     border: 0;
     > a,
     > span:first-child {
-      border-bottom: 1px solid $coal;
+      border-bottom: 1px solid $black;
       display: block;
       color: $black;
       font-weight: 700;
@@ -516,11 +516,12 @@ nav {
   }
   .icon--less,
   .icon--power {
-    background: $smoke;
+    background: $white;
     color: $black;
     padding: 0px 10px 8px 10px;
-    border-bottom: 1px solid $silver;
-    @media only screen and (min-width: $screen-sm-min) {font-size: 11px;}
+    border-bottom: 1px solid $black;
+	border-top: 1px solid $black;
+    @media only screen and (min-width: $screen-sm-min) {font-size: 1.1em;}
     &:first-child { border-top: 3px solid $silver; }
     &:before {
       font-size: 20px;
@@ -528,11 +529,11 @@ nav {
       top: 5px;
       left: -3px;
     }
-    &:hover { text-decoration: underline; }
+    &:hover { text-decoration: none; }
     &:hover:before {background: none;}
   }
   li {
-    border-bottom: 1px solid $silver;
+    border-bottom: 1px solid $black;
     display: block;
     margin: 0;
     &:before {
@@ -545,13 +546,13 @@ nav {
       width: 5px;
     }
     &.active {
-      color: $black;
+      color: $A01;
       padding: 10px 0;
       @media screen and (max-width: $screen-xs-max) {
         padding: 10px;
       }
       position: relative;
-      border-bottom: 1px solid $silver;
+      border-bottom: 1px solid $black;
       &:before {
         background: $venetian-red;
         @media screen and (max-width: $screen-xs-max) {
@@ -571,7 +572,7 @@ nav {
       }
     }
     a {
-      color: $empress;
+      color: $T11;
       padding: 10px 0;
       @media only screen and (max-width: $screen-xs-max) { padding: 10px; }
       position: relative;
@@ -585,6 +586,7 @@ nav {
         width: 5px;
       }
       &:active {color: $black;}
+	  &:hover {color: $A01;}
     }
   }
   .list-sub {
@@ -638,7 +640,7 @@ nav {
     border: none;
     width: 100%;
     text-align: left;
-    border: 1px solid $silver;
+    border: 1px solid $black;
     margin-left: 0px;
     padding: 10px;
     margin-top: 5px;
