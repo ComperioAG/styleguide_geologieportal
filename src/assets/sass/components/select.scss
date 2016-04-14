@@ -32,7 +32,7 @@ select.form-control,
   }
   &.pull-right .dropdown-menu {right: 0;}
   .dropdown-toggle {
-    color: $coal;
+    color: $T11;
     padding: 0 10px;
     display: inline-block;
     border: 1px solid $empress;
@@ -42,16 +42,16 @@ select.form-control,
     text-decoration: none;
     width: 200px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
     background: $white;
     &:hover, &:active, &:focus {
       text-decoration: none;
-      color: $venetian-red;
+      color: $T10;
     }
     span {
       border-left: 1px solid $empress;
       display: inline-block;
-      color: $black;
+      color: $coal;
       margin: 0;
       float: right;
       padding-left: 10px;
@@ -61,7 +61,7 @@ select.form-control,
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    color: $venetian-red;
+    color: $T10;
     position: relative;
     z-index: 1000;
   }

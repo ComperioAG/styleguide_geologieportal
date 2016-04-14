@@ -13,7 +13,19 @@
 // COLORS
 //=============================================================================
 
-$B01:										 #877a71;
+$B02:			                             #dbd8d7;
+$B03:										 #f1f0ef;
+$B04:									  	 #f8f7f7;
+$T01:										 #616161; 
+$T02:										 #000000;
+$A01:										 #3b8f44;
+$A02:										 #00c853;
+$A03:										 #97e1aa;
+$A04:										 #0288d1;
+$A05:										 #0288d1;
+
+$T10:										 #3b8f44;
+$T11:										 #616161;
 
 $venetian-red:                               #DC0018;
 $red:                                        #F7001D;
@@ -27,27 +39,28 @@ $clear-day:                                  #f2f7f9;
 $black:                                      #000000;
 $night-rider:                                #333333; // gray 80%;
 $coal:                                       #877a71; // B01
-$empress:                                    #757575; // gray 54%;
+$empress:                                    #616161; // T11
 $silver:                                     #CCCCCC; // gray 20%;
 $light-grey:                                 #D5D5D5; // gray 16%;
 $gainsboro:                                  #E5E5E5; // gray 10%;
 $smoke:                                      #f5f5f5; // gray 4%;
-$white:                                      #FFFFFF;
+$white:                                      #FFFFFF; // B05
+
 
 $sherpa-blue:                                #03344D;
 $fire-engine-red:                            #bb1122;
 $cadillac:                                   #884488;
 
 $menu-gradient:                              linear-gradient(top, #e8e8e8 0%, #f7f7f7 61%, #f7f7f7 89%, #f5f5f5 91%, #ececec 95%, #d7d7d7 100%);
-$menu-border-dark:                           #b8b8b8;
-$menu-border-light:                          $white;
+$menu-border-dark:                           $white; // B05
+$menu-border-light:                          $white; // B05
 
 
 // TYPOGRAPHY
 //=============================================================================
 
 //** Fonts variables
-$frutiger:    'Frutiger Neue', Helvetica, Arial, sans-serif;
+$frutiger:    		   Roboto, 'Frutiger Neue', Helvetica, Arial, sans-serif;
 $admin-icons:         'Admin Icons';
 
 

@@ -12,6 +12,27 @@
 @charset "UTF-8";
 
 @font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
   font-family: 'Admin Icons';
   src: url('../fonts/AdminCH_Symbols.eot?v3');
   src: url('../fonts/AdminCH_Symbols.eot?#iefix') format('embedded-opentype'),
