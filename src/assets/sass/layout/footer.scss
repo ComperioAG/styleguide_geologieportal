@@ -10,8 +10,8 @@
  ========================================================== */
 
 footer {
-  border-top: 1px solid $light-grey;
-  background: $smoke;
+  // border-top: 1px solid $light-grey;
+  background: $B04;
   margin-top: 20px;
   @media only screen and (max-width: $screen-xs-max) {
     @include gradient-light;
@@ -49,10 +49,11 @@ address {
   // height of it's floated elements.
   display: table-cell;
   width: 10000px;
+  font-size: 1em;
 
-  border-top: 1px solid $white;
+  // border-top: 1px solid $white;
   margin-bottom: 0;
-  padding: 10px 15px;
+  padding: 10px 0px;
   @media only screen and (max-width: $screen-xs-max) {
     padding: 0;
     border-color: $light-grey;
@@ -62,7 +63,7 @@ address {
         display: inline-block;
         border-left: 1px solid $light-grey;
         padding: 10px;
-        background: fade-out($gainsboro, 0.7);
+        //background: fade-out($gainsboro, 0.7);
       }
     }
   }
@@ -71,17 +72,17 @@ address {
 .site-map {
   @media only screen and (max-width: $screen-xs-max) {display: none;}
   position: relative;
-  background: $smoke;
-  background: -moz-linear-gradient(top, $smoke 0%, $white 6%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$smoke), color-stop(6%,$white));
-  background: -webkit-linear-gradient(top, $smoke 0%,$white 6%);
-  background: -o-linear-gradient(top, $smoke 0%,$white 6%);
-  background: -ms-linear-gradient(top, $smoke 0%,$white 6%);
-  background: linear-gradient(to bottom, $smoke 0%,$white 6%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#fcfcfc',GradientType=0 );
-  border-bottom: 1px solid $silver;
-  border-top: 1px solid $white;
-  padding-bottom: 30px;
+  //background: $smoke;
+  // background: -moz-linear-gradient(top, $smoke 0%, $white 6%);
+  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$smoke), color-stop(6%,$white));
+  // background: -webkit-linear-gradient(top, $smoke 0%,$white 6%);
+  // background: -o-linear-gradient(top, $smoke 0%,$white 6%);
+  // background: -ms-linear-gradient(top, $smoke 0%,$white 6%);
+  // background: linear-gradient(to bottom, $smoke 0%,$white 6%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#fcfcfc',GradientType=0 );
+  // border-bottom: 1px solid $silver;
+  // border-top: 1px solid $white;
+  // padding-bottom: 30px;
   .site-map-toggle {
     display: none;
   }

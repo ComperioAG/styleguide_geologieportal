@@ -35,8 +35,8 @@ select.form-control,
     color: $T11;
     padding: 0 10px;
     display: inline-block;
-    border: 1px solid $empress;
-    border-radius: 4px;
+    border: 1px solid $B01;
+    border-radius: 0px;
     font-size: 0.8em;
     line-height: 1.8em;
     text-decoration: none;
@@ -49,7 +49,7 @@ select.form-control,
       color: $T10;
     }
     span {
-      border-left: 1px solid $empress;
+      // border-left: 1px solid $empress;
       display: inline-block;
       color: $coal;
       margin: 0;

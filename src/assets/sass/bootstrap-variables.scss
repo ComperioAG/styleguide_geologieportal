@@ -118,7 +118,7 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.33 !default;
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
+$border-radius-base:        0px !default;
 $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
 
@@ -433,7 +433,7 @@ $nav-disabled-link-color:                   $empress !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
 
 //== Tabs
-$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color:                     none !default;
 
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
 

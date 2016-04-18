@@ -17,14 +17,18 @@
   a {
     font-size: 0.85em;
     margin-top: 0;
+	font-weight: 300;
+  }
+  a:hover {
+	color: $A05;
   }
   span.icon {
     position: relative;
     top: 2px;
   }
   li.active {
-    color: $coal;
-    font-size: 0.935em
+    color: $black;
+    font-size: 0.85em
   }
   &.breadcrumb--search {
     margin: 0.8em 0;

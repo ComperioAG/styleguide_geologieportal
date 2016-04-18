@@ -14,11 +14,11 @@ a {
  line-height: 1.5;
 
  &:hover {
-   color: $cerulean;
+   color: $A05;
    text-decoration: none;
  }
  &:active, &:visited {text-decoration: none;}
- &:visited {color: $cadillac;}
+ &:visited {color: $A04;}
  p & {
    line-height: 1;
    text-decoration: none;

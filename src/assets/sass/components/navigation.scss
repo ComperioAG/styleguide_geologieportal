@@ -339,6 +339,7 @@ nav {
     &.active {
       color: $T10;
 	  background: $B03;
+	  text-decoration: none;
       @media only screen and (max-width: $screen-xs-max) {
         background: $silver;
       }
@@ -522,7 +523,7 @@ nav {
     border-bottom: 1px solid $black;
 	border-top: 1px solid $black;
     @media only screen and (min-width: $screen-sm-min) {font-size: 1.1em;}
-    &:first-child { border-top: 3px solid $silver; }
+    &:first-child { border-top: 1px solid $black; }
     &:before {
       font-size: 20px;
       position: relative;
