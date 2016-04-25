@@ -28,7 +28,8 @@ var gulp = require('gulp'),
     path = require('path'),
     markdown = require('markdown-it')({
       html: true
-    });
+    }),
+    rimraf = require('gulp-rimraf');
 
 /**
  * Configuration
@@ -184,8 +185,9 @@ gulp.task('build-fonts', function() {
 /**
  * Compile TWIG example pages
  */
-gulp.task('clean-twig', function(cb) {
-  del(['src/views/pages'], cb);
+gulp.task('clean-twig', function() {
+  return gulp.src('src/views/pages/*')
+    .pipe(rimraf());
 });
 
 gulp.task('twig', ['clean-twig'], function() {
