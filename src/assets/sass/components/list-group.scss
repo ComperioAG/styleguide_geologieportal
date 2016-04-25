@@ -38,7 +38,6 @@
 
 .list-group-item, .list-group-item:last-child {
   border: none;
-  border-bottom: 1px solid $silver;
   border-radius: 0px;
   padding: 10px 0;
   margin-bottom: 0;
@@ -46,6 +45,7 @@
   a,
   p {
     font-size: 1rem;
+    margin-bottom: 5px;
   }
 
   &:after {
