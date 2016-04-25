@@ -4,6 +4,7 @@
 
 {% block sidebar %}{% endblock %}
 {% block sidebar_right %}{% endblock %}
+{% block content_columns %}col-sm-12{% endblock %}
 
 {% block content %}
     <div class="col-sm-12">
@@ -34,7 +35,6 @@
       <!-- Tab panes -->
       <div class="tab-content tab-border">
         <div class="tab-pane active" id="contentPages">
-
           <!-- Header pagination -->
           <nav class="pagination-container clearfix">
             <span class="pull-left">Object - 2 of 3</span>
@@ -86,10 +86,9 @@
               <li class="separator-left"><a href="#" title="step forward"><span class="icon icon--step-forward"></span></a></li>
             </ul>
           </nav>
-
         </div>
-        <div class="tab-pane" id="newsPages">
 
+        <div class="tab-pane" id="newsPages">
           <!-- Header pagination -->
           <nav class="pagination-container clearfix">
             <span class="pull-left">Object - 2 of 3</span>
@@ -114,6 +113,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
           </article>
+
           <article class="search-result clearfix">
             <h4><a href="#">News item</a></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptate, sint animi reiciendis odio cumque corrupti perspiciatis et minus sit quia doloremque. Perspiciatis, atque veritatis ad iste ducimus libero voluptas.</p>
@@ -135,8 +135,8 @@
             </ul>
           </nav>
         </div>
-        <div class="tab-pane" id="publicationsPages">
 
+        <div class="tab-pane" id="publicationsPages">
           <form action="#" class="form-inline">
             <div class="checkbox checkbox--left">
               <input type="checkbox" id="checkbox1" value="checkbox1" checked>
@@ -187,7 +187,6 @@
           <div class="pagination-container pagination-end">
             <span>Objects <b>1</b> - <b>3</b> of 3</span>
           </div>
-
         </div>
       </div>
 

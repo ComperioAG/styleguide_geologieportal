@@ -28,4 +28,7 @@
   .list-group-item:last-child {
     border-bottom: none;
   }
+  &.list-group {
+    margin-bottom: 0;
+  }
 }
