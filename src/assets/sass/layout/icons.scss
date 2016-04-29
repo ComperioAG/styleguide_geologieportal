@@ -18,6 +18,12 @@
     font-family: $admin-icons;
     display: inline-block; // to enable the possibility of no text-decoration whtn in a link
   }
+  &.icon--before.icon--hidden:before {
+    visibility: hidden;
+  }
+  &.icon--after.icon--hidden:after {
+    visibility: hidden;
+  }
 }
 
 span.icon {

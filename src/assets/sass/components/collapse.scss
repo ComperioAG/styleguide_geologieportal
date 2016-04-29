@@ -9,6 +9,9 @@
 .collapse-box {
   padding: 0.8em;
   background: $smoke;
+  > a.active {
+    color: $A01;
+  }
 }
 
 a[data-toggle="collapse"] {
@@ -18,6 +21,9 @@ a[data-toggle="collapse"] {
   display: block;
   &.collapsed {
     @extend .icon--greater;
+  }
+  &.active {
+    color: $A01;
   }
 }
 

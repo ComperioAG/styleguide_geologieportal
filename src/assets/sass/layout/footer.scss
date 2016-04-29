@@ -10,19 +10,34 @@
  ========================================================== */
 
 footer {
-  // border-top: 1px solid $light-grey;
-  background: $B04;
-  margin-top: 20px;
+  padding-top: 60px;
+  .container-fluid {
+    background: none;
+    padding-top: 0px;
+  }
+  .collapse.in{
+    @media only screen and (max-width: $screen-sm-max) {
+      margin-bottom: -30px;
+      overflow: hidden;
+    }
+    margin-left: 0px;
+  }
   @media only screen and (max-width: $screen-xs-max) {
     @include gradient-light;
   }
   select {
     min-width: 200px;
   }
+  a {
+    line-height: 2em;
+  }
   h3 {
     margin: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0px;
+    padding-bottom: 0.5em;
+    a {
+      //font-size: 1.2rem !important;
+    }
     @media only screen and (max-width: $screen-xs-max) {
       &:not(:first-child) {
         @include gradient-light;
@@ -70,42 +85,35 @@ address {
 }
 
 .site-map {
+  div[class*=col-] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   @media only screen and (max-width: $screen-xs-max) {display: none;}
   position: relative;
-  //background: $smoke;
-  // background: -moz-linear-gradient(top, $smoke 0%, $white 6%);
-  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$smoke), color-stop(6%,$white));
-  // background: -webkit-linear-gradient(top, $smoke 0%,$white 6%);
-  // background: -o-linear-gradient(top, $smoke 0%,$white 6%);
-  // background: -ms-linear-gradient(top, $smoke 0%,$white 6%);
-  // background: linear-gradient(to bottom, $smoke 0%,$white 6%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#fcfcfc',GradientType=0 );
-  // border-bottom: 1px solid $silver;
-  // border-top: 1px solid $white;
-  // padding-bottom: 30px;
   .site-map-toggle {
     display: none;
+  }
+  @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    //padding-bottom: 30px;
   }
   @media only screen and (max-width: $screen-sm-max) {
     .container-fluid:not(.in) {
       display: none;
     }
     .in {
-      padding-top: 20px;
+      padding-top: 30px;
     }
     .site-map-toggle {
       position: absolute;
       display: inline-block;
-      right: 15px;
+      right: 30px;
       top: 0;
       z-index: 200;
     }
   }
-  & + div {
-    padding-bottom: 10px;
-  }
   a {
-    font-size: 13px;
+    //font-size: 13px;
     display: inline-block;
     padding: 3px 0;
   }
@@ -115,6 +123,10 @@ address {
   display: none;
   @media only screen and (max-width: $screen-xs-max) {
     display: block;
+    padding-bottom: 0px;
+    h3 {
+      padding-bottom: 1em;
+    }
     ul {
       padding: 0;
       border-bottom: 1px solid $silver;
@@ -135,10 +147,6 @@ address {
 
 
 footer {
-  img {
-    max-width: 204px;
-    margin: 15px 0;
-  }
   .footer-line {
     position: relative;
     margin-left: -15px;
@@ -152,5 +160,39 @@ footer {
   display: block;
   @media only screen and (max-width: $screen-xs-max) {
 
+  }
+}
+
+.social-and-links {
+  h3 {
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+  div[class*=col-] {
+    margin-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media only screen and (max-width: $screen-sm-max) {
+    h3 {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    h3 {
+      padding-top: 30px;
+    }
+  }
+  @media only screen and (min-width: $screen-sm-min) {
+    address {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media only screen and (max-width: $screen-xs-max) {
+    .container-fluid {
+      padding: 0px;
+    }
   }
 }

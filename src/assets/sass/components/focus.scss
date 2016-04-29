@@ -110,12 +110,13 @@
   }
 
   .tab-content.tab-focus {
-    padding: 0;
+    padding: 0px 15px 0px 0px;
     border-bottom: none;
     // border-top: 1px solid $silver;
 
     h2 {
       font-weight: 700;
+      margin-top: 15px;
     }
 
     div[class*="col"] {
@@ -130,7 +131,7 @@
 } // End of media queries
 
 .tab-focus.carousel {
-  margin-bottom: 55px !important;
+  margin-bottom: 103px !important;
 
   .item {
     padding: 0 !important;

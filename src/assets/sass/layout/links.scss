@@ -18,7 +18,7 @@ a {
    color: $A05;
    text-decoration: none;
  }
- &:active, &:visited {text-decoration: none;}
+ &:active, &:visited, &:focus, &:active {text-decoration: none;}
  &:visited {color: $A04;}
  p & {
    line-height: 1;

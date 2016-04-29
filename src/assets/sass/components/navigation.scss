@@ -35,7 +35,7 @@ nav {
 .navbar {
   border-radius: 0;
   border: none;
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 
 .nav-mobile {
@@ -167,7 +167,7 @@ nav {
       height: 78px;
 	  background: $B02;
 	  //@include gradient-menu;
-      max-width: 110px;
+      max-width: 130px;
       color: $coal;
       font-size: 0.8em; // 16px
       line-height: 1.2; // 24px
@@ -330,13 +330,16 @@ nav {
     color: $T11;
     padding: 4px;
     &:hover {
-	  color: $T10;
-	  text-decoration: none;
+      color: $T10;
+      text-decoration: none;
 	  }
     &.active {
       color: $T10;
-	  background: $B03;
-	  text-decoration: none;
+      background: $B03;
+      text-decoration: none;
+      &:hover {
+        color: $T10;
+      }
       @media only screen and (max-width: $screen-xs-max) {
         background: $silver;
       }

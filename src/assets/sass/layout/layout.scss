@@ -44,13 +44,16 @@ body,
 
 .container-main {
   padding: 0;
-  background: $B03;
   margin-top: 0;
   // box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.6);
 }
 
-.container-fluid h1:first-child {
-  margin-top: 0;
+.container-fluid {
+  background: $B03;
+  padding-top: 24px;
+  h1:first-child {
+    margin-top: 0;
+  }
 }
 
 hr {
@@ -60,6 +63,10 @@ hr {
   background: $light-grey;
 }
 
-.row-spacer {
+div[class*=col-] {
   margin-bottom: 60px;
+}
+
+.fixmargin {
+  margin-bottom: 0px !important;
 }
