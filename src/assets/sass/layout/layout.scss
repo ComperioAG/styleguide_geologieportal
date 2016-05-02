@@ -49,10 +49,17 @@ body,
 }
 
 .container-fluid {
-  background: $B03;
   padding-top: 24px;
   h1:first-child {
     margin-top: 0;
+  }
+
+  &.background-b03{
+    background: $B03;
+  }
+
+  &.background-white{
+    background: $white;
   }
 }
 

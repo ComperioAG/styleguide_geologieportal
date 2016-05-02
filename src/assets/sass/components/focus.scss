@@ -77,10 +77,23 @@
       &.active > a,
       &.active > a:hover,
       &.active > a:focus {
+        //color: $venetian-red;
+        background-color: $A03;
+
         &::before {
+          content: '';
+          display: block;
+          height: 3px;
+
+          position: absolute;
           top: auto;
-          bottom: 0;
+          bottom: 0px;
+          left: -1px;
+          right: -1px;
+
           z-index: 1;
+
+          background-color: $venetian-red;
         }
       }
 
@@ -104,7 +117,7 @@
 
       &:hover a {
         padding-top: 10px !important; // override nav-tabs behaviour
-		background: $A03;
+		    background: $A03;
       }
     }
   }

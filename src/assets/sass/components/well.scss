@@ -49,7 +49,7 @@
     clear: both;
     visibility: hidden;
   }
-  .well-legend {
+  .well-imgtopic {
     padding: 15px;
   }
   @media only screen and (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
@@ -64,7 +64,7 @@
       margin-top: 22px;
       margin-bottom: 18px; //passt in sm darstellung
     }
-    .well-legend {
+    .well-imgtopic {
       padding: 0px;
       margin-bottom: 15px;
     }

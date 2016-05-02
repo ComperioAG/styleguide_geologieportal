@@ -19,4 +19,9 @@ subpage:
   title: Unterseite
 montterri-hauptseite:
   title: Mont-Terri Hauptseite
-
+montterri-artikel:
+  title: Mont-Terri Artikel
+montterri-artikelmitsidebar:
+  title: Mont-Terri Artikel mit Sidebar
+montterri-artikelmitbildsidebar:
+  title: Mont-Terri Artikel mit Bild und Sidebar

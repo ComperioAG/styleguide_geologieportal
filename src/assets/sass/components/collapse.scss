@@ -29,6 +29,9 @@ a[data-toggle="collapse"] {
 
 .drilldown a[data-toggle="collapse"] {
   padding: 0 10px 10px 10px;
+  &[aria-expanded="true"] {
+    color: $A01;
+  }
 }
 
 .drilldown-container.collapse.in,

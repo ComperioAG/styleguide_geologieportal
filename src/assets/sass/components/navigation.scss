@@ -185,8 +185,11 @@ nav {
         font-size: 0.9em;
       }
       &:hover, &:focus {
-        color: $T10;
+        //color: $T10;
         background: $white;
+        &:after {
+          color: $A01;
+        }
         // background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
         // background: -moz-linear-gradient(top,  #f4f4f4 0%, #ffffff 10%, #ffffff 79%, #ffffff 91%, #dbdbdb 100%);
         // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(10%,#ffffff), color-stop(79%,#ffffff), color-stop(91%,#ffffff), color-stop(100%,#dbdbdb));
@@ -275,8 +278,8 @@ nav {
     float: left;
   }
   a {
-    font-size: 0.85em;
-	font-weight: normal;
+    //font-size: 0.85em;
+    font-weight: normal;
     color: $coal;
     &:hover {color: $venetian-red;}
   }
@@ -468,7 +471,6 @@ nav {
   @media only screen and (min-width: $screen-sm-min) {
     // adding this padding for compensating the padding we removed from .drilldown
     padding-left: 15px;
-    padding-right: 15px;
   }
   li.list-emphasis {
     padding: 0;
@@ -478,7 +480,7 @@ nav {
       border-bottom: 1px solid $black;
       display: block;
       color: $black;
-      font-weight: 700;
+      font-weight: bold;
       padding: 10px 0;
       @media screen and (max-width: $screen-xs-max) {
         padding: 10px;
@@ -511,24 +513,38 @@ nav {
       }
     }
   }
+  & > a {
+    line-height: 1em;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    padding-left: 0px !important;
+    &:hover {
+      color: $A01;
+    }
+  }
   a {
+    //min-height: 45px;
     display: block;
     width: 100%;
+    font-weight: normal;
   }
   .icon--less,
   .icon--power {
     background: $white;
     color: $black;
-    padding: 0px 10px 8px 10px;
+    padding: 10px;
     border-bottom: 1px solid $black;
-	border-top: 1px solid $black;
-    @media only screen and (min-width: $screen-sm-min) {font-size: 1.1em;}
+    border-top: 1px solid $black;
     &:first-child { border-top: 1px solid $black; }
     &:before {
-      font-size: 20px;
-      position: relative;
-      top: 5px;
-      left: -3px;
+      font-size: 1.5em;
+      padding-right: 10px;
+      vertical-align: sub;
+      //overflow: hidden;
+      //position: relative;
+      //top: 5px;
+      //left: -3px;
+      margin-left: 3px;
     }
     &:hover { text-decoration: none; }
     &:hover:before {background: none;}
@@ -609,7 +625,7 @@ nav {
     li.active a,
     li a,
     ul ul li:first-child a {
-      color: $cerulean;
+      color: $black;
     }
     .icon--power {
       border-top: 1px solid $silver;
@@ -628,8 +644,25 @@ nav {
     padding-top: 0;
   }
   @media only screen and (max-width: $screen-xs-max) {
+    margin-top: -9px;
+    margin-bottom: 24px !important;
     &[class*=col-] {
       border-bottom: 1px solid $silver;
+    }
+    & > div {
+      margin-bottom: 6px;
+    }
+    & div.collapse.in {
+      margin-bottom: 15px;
+    }
+    a[data-toggle=collapse] {
+      padding-left: 0px;
+      padding-bottom: 5px;
+      &:before {
+        font-size: 1.5em;
+        padding-right: 8px;
+        vertical-align: sub;
+      }
     }
   }
 }

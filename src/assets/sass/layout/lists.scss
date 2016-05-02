@@ -23,13 +23,24 @@ ul {
     margin-top: 0;
     list-style-type: none;
   }
+
+  &.dashed {
+    list-style-type: none;
+    > li {
+      &:before {
+        content: "\2500";
+        position: absolute;
+        margin-left: -1.5em; 
+      }
+    }
+  }
 }
 
 li {
-  font-size: 1.1em;
-  line-height: 1.5;
+  //font-size: 1.1em;
+  //line-height: 1.5;
   margin-left: 0.8em;
-  li {font-size: 1em;}
+  //li {font-size: 1em;}
 }
 
 ol {

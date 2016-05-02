@@ -15,9 +15,8 @@
   li + li:before { content: none; }
   .icon {margin: 0 10px;}
   a {
-    font-size: 0.85em;
     margin-top: 0;
-	font-weight: 300;
+    font-weight: 300;
   }
   a:hover {
 	color: $A05;
@@ -28,7 +27,6 @@
   }
   li.active {
     color: $black;
-    font-size: 0.85em
   }
   &.breadcrumb--search {
     margin: 0.8em 0;
