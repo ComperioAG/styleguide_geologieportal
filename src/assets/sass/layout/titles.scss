@@ -29,6 +29,25 @@ h4 {
   font-weight: bold;
 }
 
+h1, .h1 {
+  line-height: 1.25;
+}
+
+h2, .h2 {
+  line-height: 1.4;
+}
+
+h3, .h3 {
+  line-height: 1.333;
+  & a, & a:visited {
+    color: $A01;
+  }
+}
+
+h4, .h4 {
+  line-height: 1.5;
+}
+
 h1, h2, h3, h4, h5, h6 {
   a {
     line-height: 1;
@@ -51,5 +70,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-title {
   margin: .4em 1.6em 1em 0;
-  line-height: 1em;
+  line-height: 1.25em;
 }

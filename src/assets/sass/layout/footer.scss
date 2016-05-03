@@ -161,6 +161,9 @@ footer {
   @media only screen and (max-width: $screen-xs-max) {
 
   }
+  & a.icon.icon--before:before {
+    color:$A05;
+  }
 }
 
 .social-and-links {
