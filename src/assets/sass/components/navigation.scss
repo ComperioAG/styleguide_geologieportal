@@ -165,13 +165,12 @@ nav {
     /* border-left: 1px solid $menu-border-light; */
     > a {
       height: 78px;
-	  background: $B02;
-	  //@include gradient-menu;
-      max-width: 130px;
+      background: $B02;
+      //@include gradient-menu;
+      max-width: 150px;
       color: $coal;
-      font-size: 0.8em; // 16px
-      line-height: 1.2; // 24px
-	  font-weight:normal;
+      line-height: 1.5; // 24px
+      font-weight:normal;
       padding: 10px 9px;
       &:after {
         content: get-font-icon('bottom');
