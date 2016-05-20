@@ -29,7 +29,18 @@
        url('../fonts/roboto-medium.woff2?v3') format('woff2'),
        url('../fonts/roboto-medium.woff?v3') format('woff'),
        url('../fonts/roboto-medium.ttf?v3') format('truetype');
-  font-weight: 300;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-medium.eot?v3');
+  src: url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/roboto-medium.woff2?v3') format('woff2'),
+       url('../fonts/roboto-medium.woff?v3') format('woff'),
+       url('../fonts/roboto-medium.ttf?v3') format('truetype');
+  font-weight: 600;
   font-style: normal;
 }
 
