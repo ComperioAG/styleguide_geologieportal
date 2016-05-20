@@ -1,0 +1,68 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Mont-Terri Textseite{% endblock %}
+
+{% block breadcrumb %}
+  <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
+    <div class="col-sm-12 fixmargin">
+      <h2 id="br1" class="hidden">Breadcrumbs</h2>
+      <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+        <li><a href="#">Mont-Terri</a><span class="icon icon--greater"></span></li>
+        <li><a href="#">Ziel/Zweck</a><span class="icon icon--greater"></span></li>
+        <li><a href="#">Fragestellung</a><span class="icon icon--greater"></span></li>
+        <li class="active" aria-selected="true">Optimierung technischer Barrierensysteme</li>
+      </ol> 
+    </div> 
+  </div>
+{% endblock %}
+
+{% block sidebar %}
+  <div class="col-sm-4 col-md-3 drilldown">
+    <div class="col-sm-12">
+      <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
+      <div class="drilldown-container"> 
+        <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+          <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Ziel/Zweck</a>
+          <ul>
+            <!-- the .list-emphasis class is optionnal -->
+            <li class="list-emphasis">
+              <span>Fragestellung</span>
+              <ul>
+                <!-- add the .list-sub class if the list has some animated sub-lists -->
+                <li><a href="#">Forschung und Entwicklung</a></li>
+                <li><a href="#">Charakterisierung des Opalinustons</a></li>
+                <li class="active" aria-selected="true">Optimierung technischer Barrierensysteme<span class="sr-only"> active</span></li>
+                <li><a href="#">Partner</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-8 fixmargin">
+    <div class="row">
+      <div class="col-sm-12">
+        <article>
+          <h1 class="page-title">Fragestellungen zur Optimierung technischer Barrierensysteme</h1>
+          <figure>
+            <img src="../../img/article-1.png" alt="image description">
+            <figcaption>In-situ-Versuche im Massstab 1:1 liefern Erkenntnisse zum Verhalten technischer Barrieresysteme (Body klein)</figcaption>
+          </figure>
+          <p>Hier werden Techniken zur Einlagerung von Behältern, der Verfüllung von Einlagerungsstollen mit Bentonit sowie deren Versiegelung erprobt. Offen ist nach wie vor die Frage, wie sich die Entwicklung von Wasserstoffgas infolge der Korrosion der Stahlbehälter auf die Barrierefunktion des Opalinustons auswirkt. Im Felslabor sollen zukünftig weitere Werkstoffe, wie etwa Kupfer und Keramik, sowie neue Konzepte für die Behälter erprobt und evaluiert werden. Vertiefte Abklärungen gelten auch den Auswirkungen von erhöhten Temperaturen und Gasdrücken auf die Transporteigenschaften des Bentonits und des Opalinustons.</p>
+
+          <p>Übergeordnetes Ziel ist schliesslich das Verständnis von gekoppelten Prozessen: Um den Prozessablauf beim Bau, beim Betrieb und nach dem Verschluss eines Endlagers wirklich zu verstehen, müssen hydraulische, thermische, mechanische und geochemische Vorgänge nicht isoliert, sondern in Kombination und in gegenseitiger Wechselwirkung betrachtet werden.</p> 
+        </article>
+      </div>
+      <div class="col-sm-12">
+        <article>
+          <h3>H3 Resultate und Anwendungen</h3>
+          <p>Alle bisherigen Erkenntnisse aus dem Felslabor Mont Terri deuten darauf hin, dass abgeschlossene Systeme in Tonschichten auch über erdgeschichtliche Zeiträume ihre Schutzfunktion erfüllen können. Diese Resultate sind nicht nur für die Lagerung von Nuklearabfällen interessant. Die gleichen Messmethoden und Sicherheitskonzepte sind auch für nicht-abbaubare chemische Abfälle anwendbar. In Zukunft könnte zudem die Speicherung von Kohlendioxid – einem der wichtigsten Treibhausgase – im Untergrund wichtig werden. Dabei dürften Tongesteine als Abdichtung ebenfalls von Bedeutung sein.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+{% endblock %}

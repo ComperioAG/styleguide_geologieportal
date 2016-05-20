@@ -30,7 +30,7 @@
       display: flex;
       flex-direction: column;
       border: none;
-      border-left: 1px solid $silver;
+      border-left: 1px solid $white;
       border-bottom: none !important;
       position: relative;
 
@@ -47,7 +47,7 @@
 
       a {
         flex-grow: 1;
-        background: $smoke;
+        background: $B02;
         display: block;
         position: relative;
         border: none;
@@ -55,14 +55,14 @@
         padding-bottom: 10px;
         font-size: 1.07142857rem;
         line-height: 1.1em;
-        text-align: center;
+        text-align: left;
         border-radius: 0;
         color: $night-rider;
         overflow: hidden;
 
         &:after {
           content: '';
-          height: 1px;
+          height: 0px;
           width: 100%;
           display: block;
           position: absolute;
@@ -77,10 +77,23 @@
       &.active > a,
       &.active > a:hover,
       &.active > a:focus {
+        //color: $venetian-red;
+        background-color: $A03;
+
         &::before {
+          content: '';
+          display: block;
+          height: 3px;
+
+          position: absolute;
           top: auto;
-          bottom: 0;
+          bottom: 0px;
+          left: -1px;
+          right: -1px;
+
           z-index: 1;
+
+          background-color: $A02;
         }
       }
 
@@ -104,17 +117,19 @@
 
       &:hover a {
         padding-top: 10px !important; // override nav-tabs behaviour
+		    background: $A03;
       }
     }
   }
 
   .tab-content.tab-focus {
-    padding: 0;
+    padding: 0px 15px 0px 0px;
     border-bottom: none;
-    border-top: 1px solid $silver;
+    // border-top: 1px solid $silver;
 
     h2 {
       font-weight: 700;
+      margin-top: 15px;
     }
 
     div[class*="col"] {
@@ -129,7 +144,7 @@
 } // End of media queries
 
 .tab-focus.carousel {
-  margin-bottom: 55px !important;
+  margin-bottom: 103px !important;
 
   .item {
     padding: 0 !important;

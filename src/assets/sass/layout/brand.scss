@@ -18,8 +18,8 @@
   }
 
   img {
-    max-width: 252px;
-    height: auto;
+    max-height: 87px;
+    width: auto;
 
     @media only screen and (max-width: $screen-sm-max) {
       max-height: 50px;
@@ -27,7 +27,6 @@
 
     margin: 0;
     padding-right: 2em;
-    border-right: 1px solid $gainsboro;
     float: left;
   }
 

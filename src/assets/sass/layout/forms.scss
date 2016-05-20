@@ -38,7 +38,7 @@ legend {
 }
 
 .form-control {
-  border-color: $empress;
+  border-color: $B01;
   padding: 0.4em 0.3076em;
   line-height: 1.2;
   height: auto;
@@ -84,7 +84,7 @@ label {
     color: $coal;
   }
   .form-control {
-    border-color: $coal;
+    border-color: $B01;
     @extend .form-control;
   }
 }

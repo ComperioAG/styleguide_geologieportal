@@ -12,19 +12,20 @@
 a {
  color: $cerulean;
  line-height: 1.5;
+ font-weight: 500;
 
  &:hover {
-   color: darken($cerulean, 5%);
-   text-decoration: underline;
+   color: $A05;
+   text-decoration: none;
  }
- &:active, &:visited {text-decoration: none;}
- &:visited {color: $cadillac;}
+ &:active, &:visited, &:focus, &:active {text-decoration: none;}
+ &:visited {color: $A04;}
  p & {
    line-height: 1;
-   text-decoration: underline;
+   text-decoration: none;
  }
  p &:hover {
-   text-decoration: underline;
+   text-decoration: none;
  }
 
  small & ~ span{

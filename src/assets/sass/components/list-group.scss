@@ -10,16 +10,16 @@
  ========================================================== */
 
 .list-group {
+  margin-bottom: 0px;
   h2 {
     font-weight: 700;
-    font-size: 1.3em;
   }
 }
 
 .list-group-header {
-  min-height: 30px;
-  border-bottom: 2px solid $silver;
-  margin-bottom: 10px;
+  min-height: 35px;
+  //border-bottom: 2px solid $silver;
+  // margin-bottom: 10px;
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -38,14 +38,15 @@
 
 .list-group-item, .list-group-item:last-child {
   border: none;
-  border-bottom: 1px solid $silver;
   border-radius: 0px;
   padding: 10px 0;
   margin-bottom: 0;
+  background-color: $B04;
 
   a,
   p {
     font-size: 1rem;
+    margin-bottom: 5px;
   }
 
   &:after {

@@ -18,6 +18,12 @@
     font-family: $admin-icons;
     display: inline-block; // to enable the possibility of no text-decoration whtn in a link
   }
+  &.icon--before.icon--hidden:before {
+    visibility: hidden;
+  }
+  &.icon--after.icon--hidden:after {
+    visibility: hidden;
+  }
 }
 
 span.icon {
@@ -108,6 +114,7 @@ $icon-list: (
   padding-right: 0;
 }
 
-a.icon:hover {
-  text-decoration: underline; // fix to override normal bootstrap behaviour
+a.icon:hover, a.icon.focus {
+  text-decoration: none; // fix to override normal bootstrap behaviour
+  color: $A05;
 }

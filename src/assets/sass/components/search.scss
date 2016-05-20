@@ -10,8 +10,12 @@
  ========================================================== */
 
 .form-search {
+  margin-top: 30px;
   display: inline-block;
   position: relative;
+  @media only screen and (max-width: $screen-sm-max) {
+    margin-top: 0px;
+  }
   @media only screen and (max-width: $screen-xs-max) {
     header & {
       display: none;
@@ -22,12 +26,15 @@
     border: none;
   }
   .icon {
+    font-size: 14px;
+    color: $B01;
     display: inline-block;
     position: absolute;
     top: -1px;
     z-index: 999;
     &:hover {
       cursor: pointer;
+	  color: $A01;
     }
   }
   .icon--search {left: 3px;}
@@ -47,10 +54,10 @@
   height: 25px;
   width: 200px;
   transition: width 0.4s;
-  &:focus {width: 250px;}
+  &:focus {width: 200px;}
 }
 
-.search-field:focus + .icon--close:after {color: $black;}
+.search-field:focus + .icon--close:after {color: $B01;}
 
 /* Remove X button in IE10 */
 .search-field::-ms-clear { display: none; }

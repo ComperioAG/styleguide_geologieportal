@@ -10,20 +10,27 @@
  ========================================================== */
 
 .news-feed {
+  padding: 15px;
+  background-color: $B04;
   .scroll-y {
-    max-height: 330px !important; // MUST be of this size max.
-    overflow-y: scroll;
+    max-height: 295px !important; // MUST be of this size max.
+    overflow-y: auto; 
   }
   .list-group-header {
     margin-bottom: 0;
   }
   .list-group-item {
-    padding: 5px 0;
+    padding: 0px;
+    padding-top: 12px;
+    padding-bottom: 4px;
     @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       @include make-sm-column(3);
     }
   }
   .list-group-item:last-child {
     border-bottom: none;
+  }
+  &.list-group {
+    margin-bottom: 0;
   }
 }

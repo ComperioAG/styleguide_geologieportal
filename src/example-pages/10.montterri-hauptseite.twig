@@ -1,0 +1,201 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Mont-Terri Hauptseite{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+{% block backgroundcolor %}background-b03{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block sidebar_right %}{% endblock %}
+{% block content_columns %}col-sm-12 fixmargin{% endblock %}
+
+{% block content %}
+  <div class="col-sm-12 fixmargin">
+
+    <div class="row">
+      <div class="col-md-9">
+
+        <!-- focus panes -->
+        <div class="tab-content tab-border tab-focus">
+          <button class="tab-focus-control btn btn-sm"><span class="icon icon--pause"></span></button>
+
+          <div class="tab-pane active in" id="home">
+            <div class="row">
+              <div class="col-sm-7"><img src="../../img/focus-1.png" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>H2 Roboto Bold 20 / 28 px. Dieser Titel kann auch mal etwas länger sein und über mehrere Zeilen laufen.</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+                <p><a href="#" class="icon icon--after icon--external">externer Link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="profile">
+            <div class="row">
+              <div class="col-sm-7"><img src="http://placehold.it/588x368" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Lorem ispum title 2</h2>
+                <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Occultum facinus esse potuerit.</p>
+                <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="messages">
+            <div class="row">
+              <div class="col-sm-7"><img src="http://placehold.it/588x368" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Lorem ispum title 3</h2>
+                <p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Occultum facinus esse potuerit.</p>
+                <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="settings">
+            <div class="row">
+              <div class="col-sm-7"><img src="http://placehold.it/588x368" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Lorem ispum title 4</h2>
+                <p>4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Occultum facinus esse potuerit.</p>
+                <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- focus tabs -->
+        <ul class="nav nav-tabs nav-tabs-focus nav-justified">
+          <li class="active"><a href="#home" data-toggle="tab">Teasertext 01 kurze Variante</a></li>
+          <li><a href="#profile" data-toggle="tab">Title 2</a></li>
+          <li><a href="#messages" data-toggle="tab">Das ist der Megateaser</a></li>
+          <li><a href="#settings" data-toggle="tab">Lorem ipsum dolor sit amet</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <!-- News list example -->
+        <div class="list-group news-feed">
+          <div class="list-group-header">
+            <h2 class="pull-left">News</h2>
+          </div>
+          <div class="scroll-y">
+            <div class="list-group-item">
+              <p>
+                25.01.2016<br>
+              </p>
+              <a href="#">
+                Kurzer Newstext zu der entsprechenden Meldung. Dieser kann auch etwas länger sein.
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p>
+                24.01.2016<br>
+              </p>
+              <a href="#">
+                Kurzer Newstext zu der entsprechenden Meldung. Dieser kann auch etwas länger sein.
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p>
+                24.01.2015<br>
+              </p>
+              <a href="#">
+                Kurzer Newstext zu der entsprechenden Meldung. Dieser kann auch etwas länger sein.
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Themen Dossier Teaser</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="../../img/topic-1.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">H3 Titel der Themas</a></h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> 
+              </div>
+            </div> 
+            <div class="col-sm-4">
+              <img src="../../img/topic-2.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">H3 Titel der Themas</a></h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img src="../../img/topic-3.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">H3 Titel der Themas</a></h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Themen Dossier Teaser</h2>
+          </div>
+
+          <div class="well">
+            <img src="../../img/topic-4.png" alt="Image description">
+            <div class="well-imgtopic">
+              <h3>H3 Titel der Themas</h3>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="col-md-6 col-sm-4 fixmargin">
+        <div class="list-group">
+          <div class="list-group-header">
+            <h2 class="pull-left">Big Image 16:10</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../../img/bigtopic-1.png" alt="Image description">
+              <div class="imgtopic">
+              <h3><a href="#">H3 Titel der Themas</a></h3>
+              <p>
+            Nihilo beatiorem esse <a href="#">Metellum</a> quam Regulum.</p>
+              <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Themen Dossier Teaser</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../../img/topic-1.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">H3 Titel der Themas</a></h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p> 
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+{% endblock %}

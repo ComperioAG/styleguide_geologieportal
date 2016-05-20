@@ -63,68 +63,21 @@ layout: empty
     {% block header %}
       <header>
         <div class="clearfix">
-          <!-- Standard Bootstrap `navbar` structure with the `treecrumb` class -->
-          <nav class="navbar treecrumb pull-left" role="navigation">
-            <h2 class="sr-only">Orientation in the website</h2>
-            <ul class="nav navbar-nav">
-
-              <!-- Treecrumb dropdown element -->
-              <li class="dropdown">
-                <!-- Dropdown label -->
-                <a id="admin-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span>The federal Council</a>
-                <!-- Dropdown list element -->
-                <ul class="dropdown-menu" role="menu" aria-labelledby="admin-dropdown">
-                  <!-- Dropdown title, can ben place anywhere in the list -->
-                  <li class="dropdown-header">
-                    <a href="#">The federal Council</a>
-                    <ul>
-                      <li><a href="#">BK: Schweizerische Bundeskanzlei</a></li>
-                      <li><a href="#">EDA: Eidgenössisches Departement für auswärtige Angelegenheiten</a></li>
-                      <li><a href="#">EDI: Eidgenössisches Department des Innern</a></li>
-                      <li><a href="#"><strong>EJPD: Eidgenössisches Justiz- und Polizeidepartment</strong></a></li>
-                      <li><a href="#">VBS: Eidgenössisches Department für Verteidigung, Bevölkerungsschutz und Sport</a></li>
-                      <li><a href="#">EVD: Eidgenössisches Volkswirtschaftsdepartement</a></li>
-                      <li><a href="#">UVEK: Eidgenössisches Department für Umwelt, Verkehr, Energie und Kommunikation</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="dropdown">
-                <a href="#" id="service-dropdown" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span> Departement: EDI</a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="service-dropdown">
-                  <li class="dropdown-header">
-                    <a href="#">Departement: EDI</a>
-                    <ul>
-                      <li><a href="#">DEZA: Direktion für Entwicklung und Zusammenarbeit</a></li>
-                      <li><a href="#">Schweizer Beitrag an die erweiterte EU</a></li>
-                      <li><a href="#">Integrationsbüros</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
-            </ul>
-          </nav>
-
           <section class="nav-services clearfix">
             <h2 class="sr-only">Language selection</h2>
             <nav class="nav-lang">
               <ul>
-                <li><a href="#" lang="de" title="Deutsch" aria-label="Deutsch">DE</a></li>
+                <li><a href="#" lang="de" title="Deutsch selected" aria-label="Deutsch selected" class="active">DE</a></li>
                 <li><a href="#" lang="fr" title="Français" aria-label="Français">FR</a></li>
                 <li><a href="#" lang="it" title="Italiano" aria-label="Italiano">IT</a></li>
-                <li><a href="#" lang="rm" title="Rumantsch" aria-label="Rumantsch">RM</a></li>
-                <li><a href="#" lang="en" title="English selected" aria-label="English selected" class="active">EN</a></a></li>
+                <li><a href="#" lang="en" title="English" aria-label="English">EN</a></li>
               </ul>
             </nav>
             <nav class="nav-service" role="navigation">
               <h2 class="sr-only">Services navigation</h2>
               <ul>
-                <li><a href="#">Emergencies</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Media</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Aktuell</a></li>
+                <li><a href="#">Kontakt</a></li>
               </ul>
             </nav>
           </section>
@@ -132,8 +85,7 @@ layout: empty
 
         <div class="clearfix">
           <a href="#" class="brand hidden-xs" title="back to home">
-            <img src="../../img/logo-CH.svg" onerror="this.onerror=null; this.src='../../img/logo-CH.png'" alt="back to home" />
-            <h1>Department of the Environment, Transport, Energy and Communications</h1>
+            <img src="../../img/logo-montterri.png" alt="Logo Mont Terri – zur Startseite">
           </a>
 
 
@@ -191,9 +143,9 @@ layout: empty
                 <div class="drilldown-container">
                   <nav class="nav-page-list">
                     <ul>
-                      <li><a href="#">Aktuell</a></li>
-                      <li><a href="#">Aussenpolitik</a></li>
-                      <li class="list-sub"><a href="#">Länder- & Reise-informationen</a>
+                      <li><a href="#">Ziel/Zweck</a></li>
+                      <li><a href="#">Das Mont-Terri Projekt</a></li>
+                      <li class="list-sub"><a href="#">Felslabor</a>
                         <!-- sub-list element -->
                         <nav class="drilldown-sub" aria-expanded="false">
                           <a href="#" class="icon icon--before icon--less drilldown-back" aria-hidden="true">Mineral Water</a>
@@ -205,10 +157,9 @@ layout: empty
                           </ul>
                         </nav>
                       </li>
-                      <li><a href="#">Leben im Ausland</a></li>
-                      <li><a href="#">Einreise & Aufenthalt in der Schweiz</a></li>
-                      <li><a href="#">Publikationen & Service</a></li>
-                      <li><a href="#">Über uns</a></li>
+                      <li><a href="#">Geologie</a></li>
+                      <li><a href="#">Experimente</a></li>
+                      <li><a href="#">Besucherzentrum</a></li>
                     </ul>
                     <a href="#" class="yamm-close-bottom"><span class="icon icon--top" aria-hidden="true"></span></a>
                   </nav>
@@ -231,149 +182,350 @@ layout: empty
 
         <!-- The tab navigation -->
         <ul class="nav navbar-nav">
+          <li class="dropdown yamm-fw">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ziel/Zweck</a>
+            <ul class="dropdown-menu" role="menu">
+              <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
+              <li>
+                <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
+                <div class="yamm-content container-fluid">
+                  <div class="row"> 
+                    <div class="col-md-6 fixmargin">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>
+                            <a class="icon icon--before icon--greater" href="#">Zur Übersicht (1)</a>
+                            <br />
+                            <a class="icon icon--before icon--greater icon--hidden" href="#">Mont-Terri Projekt</a>
+                          </h3>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Organisation</a>
+                          </h3>
+                          <p>Organisation des Mont Terri Projektes. Die Aufgaben des Steuerungsausschusses, des ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Vertragswerk</a>
+                          </h3> 
+                          <p>swisstopo als Vertreter des Bundes hat Verträge mit den Projektpartnern und dem Kanton ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Finanzierung</a>
+                          </h3>
+                          <p>Die Mont Terri Forschungspartner finanzieren die Experimente. Der Bund (swisstopo) finanziert den ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Geschichte des Projekts</a> 
+                          </h3>
+                          <p>Geschichte des Projektes seit Mitte der Neunzigerjahre.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3> 
+                            <a href="#">Medien-Echo</a> 
+                          </h3>
+                          <p>Echo in Presse, Radio und Fehrnsehen.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <img src="../../img/nav-1.png" alt="Image description">
+                    </div>
+                  </div> 
+                  <a href="#" class="yamm-close-bottom" role="menuitem" tabindex="-1"><span class="icon icon--top"></span></a>
+                </div><!-- `yamm-content` end -->
+              </li><!-- Dropdown `li` end -->
+            </ul><!-- Dropdown `ul` end -->
+          </li>
           <li class="dropdown current yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aktuell <span class="sr-only">current page</span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Das Mont-Terri Projekt <span class="sr-only">current page</span></a>
             <ul class="dropdown-menu" role="menu">
               <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
               <li>
                 <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
                 <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 0</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                  <div class="row"> 
+                    <div class="col-md-6 fixmargin">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>
+                            <a class="icon icon--before icon--greater" href="#">Zur Übersicht (2)</a>
+                            <br />
+                            <a class="icon icon--before icon--greater icon--hidden" href="#">Mont-Terri Projekt</a>
+                          </h3>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Organisation</a>
+                          </h3>
+                          <p>Organisation des Mont Terri Projektes. Die Aufgaben des Steuerungsausschusses, des ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Vertragswerk</a>
+                          </h3> 
+                          <p>swisstopo als Vertreter des Bundes hat Verträge mit den Projektpartnern und dem Kanton ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Finanzierung</a>
+                          </h3>
+                          <p>Die Mont Terri Forschungspartner finanzieren die Experimente. Der Bund (swisstopo) finanziert den ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Geschichte des Projekts</a> 
+                          </h3>
+                          <p>Geschichte des Projektes seit Mitte der Neunzigerjahre.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3> 
+                            <a href="#">Medien-Echo</a> 
+                          </h3>
+                          <p>Echo in Presse, Radio und Fehrnsehen.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
+                    <div class="col-md-6">
+                      <img src="../../img/nav-1.png" alt="Image description">
                     </div>
-                  </div>
+                  </div> 
+                  <a href="#" class="yamm-close-bottom" role="menuitem" tabindex="-1"><span class="icon icon--top"></span></a>
                 </div><!-- `yamm-content` end -->
               </li><!-- Dropdown `li` end -->
             </ul><!-- Dropdown `ul` end -->
           </li>
           <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aussenpolitik</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Felslabor</a>
             <ul class="dropdown-menu" role="menu">
               <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
               <li>
                 <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
                 <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 1</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                  <div class="row"> 
+                    <div class="col-md-6 fixmargin">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>
+                            <a class="icon icon--before icon--greater" href="#">Zur Übersicht (3)</a>
+                            <br />
+                            <a class="icon icon--before icon--greater icon--hidden" href="#">Mont-Terri Projekt</a>
+                          </h3>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Organisation</a>
+                          </h3>
+                          <p>Organisation des Mont Terri Projektes. Die Aufgaben des Steuerungsausschusses, des ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Vertragswerk</a>
+                          </h3> 
+                          <p>swisstopo als Vertreter des Bundes hat Verträge mit den Projektpartnern und dem Kanton ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Finanzierung</a>
+                          </h3>
+                          <p>Die Mont Terri Forschungspartner finanzieren die Experimente. Der Bund (swisstopo) finanziert den ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Geschichte des Projekts</a> 
+                          </h3>
+                          <p>Geschichte des Projektes seit Mitte der Neunzigerjahre.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3> 
+                            <a href="#">Medien-Echo</a> 
+                          </h3>
+                          <p>Echo in Presse, Radio und Fehrnsehen.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
+                    <div class="col-md-6">
+                      <img src="../../img/nav-1.png" alt="Image description">
                     </div>
-                  </div>
+                  </div> 
+                  <a href="#" class="yamm-close-bottom" role="menuitem" tabindex="-1"><span class="icon icon--top"></span></a>
                 </div><!-- `yamm-content` end -->
               </li><!-- Dropdown `li` end -->
             </ul><!-- Dropdown `ul` end -->
           </li>
           <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Länder- & Reise-informationen</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Geologie</a>
             <ul class="dropdown-menu" role="menu">
               <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
               <li>
                 <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
                 <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 2</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                  <div class="row"> 
+                    <div class="col-md-6 fixmargin">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>
+                            <a class="icon icon--before icon--greater" href="#">Zur Übersicht (4)</a>
+                            <br />
+                            <a class="icon icon--before icon--greater icon--hidden" href="#">Mont-Terri Projekt</a>
+                          </h3>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Organisation</a>
+                          </h3>
+                          <p>Organisation des Mont Terri Projektes. Die Aufgaben des Steuerungsausschusses, des ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Vertragswerk</a>
+                          </h3> 
+                          <p>swisstopo als Vertreter des Bundes hat Verträge mit den Projektpartnern und dem Kanton ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Finanzierung</a>
+                          </h3>
+                          <p>Die Mont Terri Forschungspartner finanzieren die Experimente. Der Bund (swisstopo) finanziert den ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Geschichte des Projekts</a> 
+                          </h3>
+                          <p>Geschichte des Projektes seit Mitte der Neunzigerjahre.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3> 
+                            <a href="#">Medien-Echo</a> 
+                          </h3>
+                          <p>Echo in Presse, Radio und Fehrnsehen.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
+                    <div class="col-md-6">
+                      <img src="../../img/nav-1.png" alt="Image description">
                     </div>
-                  </div>
+                  </div> 
+                  <a href="#" class="yamm-close-bottom" role="menuitem" tabindex="-1"><span class="icon icon--top"></span></a>
                 </div><!-- `yamm-content` end -->
               </li><!-- Dropdown `li` end -->
             </ul><!-- Dropdown `ul` end -->
           </li>
           <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Leben im Ausland</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experimente</a>
             <ul class="dropdown-menu" role="menu">
               <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
               <li>
                 <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
                 <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 3</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                  <div class="row"> 
+                    <div class="col-md-6 fixmargin">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>
+                            <a class="icon icon--before icon--greater" href="#">Zur Übersicht (5)</a>
+                            <br />
+                            <a class="icon icon--before icon--greater icon--hidden" href="#">Mont-Terri Projekt</a>
+                          </h3>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Organisation</a>
+                          </h3>
+                          <p>Organisation des Mont Terri Projektes. Die Aufgaben des Steuerungsausschusses, des ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Vertragswerk</a>
+                          </h3> 
+                          <p>swisstopo als Vertreter des Bundes hat Verträge mit den Projektpartnern und dem Kanton ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Finanzierung</a>
+                          </h3>
+                          <p>Die Mont Terri Forschungspartner finanzieren die Experimente. Der Bund (swisstopo) finanziert den ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Geschichte des Projekts</a> 
+                          </h3>
+                          <p>Geschichte des Projektes seit Mitte der Neunzigerjahre.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3> 
+                            <a href="#">Medien-Echo</a> 
+                          </h3>
+                          <p>Echo in Presse, Radio und Fehrnsehen.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
+                    <div class="col-md-6">
+                      <img src="../../img/nav-1.png" alt="Image description">
                     </div>
-                  </div>
+                  </div> 
+                  <a href="#" class="yamm-close-bottom" role="menuitem" tabindex="-1"><span class="icon icon--top"></span></a>
                 </div><!-- `yamm-content` end -->
               </li><!-- Dropdown `li` end -->
             </ul><!-- Dropdown `ul` end -->
           </li>
           <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Einreise & Aufenthalt in der Schweiz</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Besucherzentrum</a>
             <ul class="dropdown-menu" role="menu">
               <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
               <li>
                 <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
                 <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 4</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                  <div class="row"> 
+                    <div class="col-md-6 fixmargin">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>
+                            <a class="icon icon--before icon--greater" href="#">Zur Übersicht (6)</a>
+                            <br />
+                            <a class="icon icon--before icon--greater icon--hidden" href="#">Mont-Terri Projekt</a>
+                          </h3>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Organisation</a>
+                          </h3>
+                          <p>Organisation des Mont Terri Projektes. Die Aufgaben des Steuerungsausschusses, des ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Vertragswerk</a>
+                          </h3> 
+                          <p>swisstopo als Vertreter des Bundes hat Verträge mit den Projektpartnern und dem Kanton ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Finanzierung</a>
+                          </h3>
+                          <p>Die Mont Terri Forschungspartner finanzieren die Experimente. Der Bund (swisstopo) finanziert den ...</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3>
+                            <a href="#">Geschichte des Projekts</a> 
+                          </h3>
+                          <p>Geschichte des Projektes seit Mitte der Neunzigerjahre.</p>
+                        </div>
+                        <div class="col-md-6">
+                          <h3> 
+                            <a href="#">Medien-Echo</a> 
+                          </h3>
+                          <p>Echo in Presse, Radio und Fehrnsehen.</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
+                    <div class="col-md-6">
+                      <img src="../../img/nav-1.png" alt="Image description">
                     </div>
-                  </div>
-                </div><!-- `yamm-content` end -->
-              </li><!-- Dropdown `li` end -->
-            </ul><!-- Dropdown `ul` end -->
-          </li>
-          <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Publikationen & Service</a>
-            <ul class="dropdown-menu" role="menu">
-              <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
-              <li>
-                <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
-                <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 5</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
-                    </div>
-                  </div>
-                </div><!-- `yamm-content` end -->
-              </li><!-- Dropdown `li` end -->
-            </ul><!-- Dropdown `ul` end -->
-          </li>
-          <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Über uns</a>
-            <ul class="dropdown-menu" role="menu">
-              <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
-              <li>
-                <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
-                <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Content of megamenu 6</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                    </div>
-                    <div class="col-md-8">
-                      <h3>Image exemple for megamenu</h3>
-                      <img src="http://placehold.it/800x300" alt="Image description">
-                    </div>
-                  </div>
+                  </div> 
+                  <a href="#" class="yamm-close-bottom" role="menuitem" tabindex="-1"><span class="icon icon--top"></span></a>
                 </div><!-- `yamm-content` end -->
               </li><!-- Dropdown `li` end -->
             </ul><!-- Dropdown `ul` end -->
@@ -384,186 +536,143 @@ layout: empty
 
 
     {% block breadcrumb %}
-      <div class="container-fluid hidden-xs">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 id="br1" class="hidden">Breadcrumbs</h2>
-            <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
-              <li><a href="#">Home page EDA</a><span class="icon icon--greater"></span></li>
-              <li><a href="#">Country & Travel Information</a><span class="icon icon--greater"></span></li>
-              <li><a href="#">Country Selection</a><span class="icon icon--greater"></span></li>
-              <li><a href="#">Democratic Republic of the Congo</a><span class="icon icon--greater"></span></li>
-              <li><a href="#">Some text to create a line break</a><span class="icon icon--greater"></span></li>
-              <li><a href="#">Bilateral Relations</a><span class="icon icon--greater"></span></li>
-              <li class="active" aria-selected="true">Title of the active page</li>
-            </ol>
-          </div>
+      <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
+        <div class="col-sm-12 fixmargin">
+          <h2 id="br1" class="hidden">Breadcrumbs</h2>
+          <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+            <li><a href="#">Home page EDA</a><span class="icon icon--greater"></span></li>
+            <li><a href="#">Country & Travel Information</a><span class="icon icon--greater"></span></li>
+            <li><a href="#">Country Selection</a><span class="icon icon--greater"></span></li>
+            <li><a href="#">Democratic Republic of the Congo</a><span class="icon icon--greater"></span></li>
+            <li><a href="#">Some text to create a line break</a><span class="icon icon--greater"></span></li>
+            <li><a href="#">Bilateral Relations</a><span class="icon icon--greater"></span></li>
+            <li class="active" aria-selected="true">Title of the active page</li>
+          </ol> 
         </div>
       </div>
     {% endblock %}
-
-    <div class="container-fluid">
+  
+    <div class="container-fluid {% block backgroundcolor %}background-white{% endblock %}">
       <div class="row">
         {% block sidebar %}
           <div class="col-sm-4 col-md-3 drilldown">
-            <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
-            <div class="drilldown-container">
-              <nav class="nav-page-list" role="navigation" id="secondary-navigation">
-                <a href="#" class="icon icon--before icon--less visible-xs">Back to parent</a>
-                <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Comestible Goods</a>
-                <ul>
-                  <!-- the .list-emphasis class is optionnal -->
-                  <li class="list-emphasis">
-                    <span>Drinks</span>
-                    <ul>
-                      <!-- add the .list-sub class if the list has some animated sub-lists -->
-                      <li class="list-sub"><a href="#">Mineral water</a>
-                        <!-- sub-list element -->
-                        <nav class="drilldown-sub" aria-expanded="false">
-                          <a href="#" class="icon icon--before icon--less drilldown-back"><span class="sr-only">Back to </span>Mineral Water</a>
-                          <ul>
-                            <li><a href="#">Test</a></li>
-                            <li><a href="#">Test2</a></li>
-                            <li><a href="#">Test3</a></li>
-                          </ul>
-                        </nav>
-                      </li>
-                      <li class="active" aria-selected="true"><span>Wine<span class="sr-only"> active</span></span></li>
-                      <li><a href="#">Beer</a></li>
-                      <li><a href="#">Spirits</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-
+            <div class="col-sm-12">
+              <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
+              <div class="drilldown-container">
+                <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+                  <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Mont-Terri</a>
+                  <ul>
+                    <!-- the .list-emphasis class is optionnal -->
+                    <li class="list-emphasis">
+                      <span>Das Mont-Terri Projekt<span class="sr-only"> active</span></span>
+                      <ul>
+                        <!-- add the .list-sub class if the list has some animated sub-lists -->
+                        <li><a href="#">Organisation</a></li>
+                        <li><a href="#">Vertragswerk</a></li>
+                        <li><a href="#">Geschichte des Projekts</a></li>
+                        <li><a href="#">Medien-Echo</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         {% endblock %}
-        <div class="{% block content_columns %}col-sm-8 col-md-9{% endblock %}" id="content">
+
+        <div class="{% block content_columns %}col-sm-8 col-md-9 fixmargin{% endblock %}">
           <div class="row">
-            {% block content %}{% endblock %}
+
+            {% block content %}
+            {% endblock %}
+            
             {% block sidebar_right %}
               <div class="col-md-4">
+                <div class="row sidebar-right-contact">
+                  <div class="col-sm-12">                <!-- Contextual information -->
+                    <a name="context-sidebar" class="hidden-print"></a>
 
-                <!-- Contextual information -->
-                <a name="context-sidebar" class="hidden-print"></a>
+                    <h2>Fachkontakt</h2>
 
-                <!-- Nav tabs -->
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a href="#contact" data-toggle="tab">Contact</a></li>
-                    <li><a href="#map" data-toggle="tab">Map</a></li>
-                  </ul>
-
-                  <!-- Tab panes -->
-                  <div class="tab-content tab-border">
-                    <div class="tab-pane active" id="contact">
-                      <div data-print="contact-info" data-title="Contact">
-                        <address itemprop="address" itemscope="itemscope" itemtype="http://data-vocabulary.org/Address">
-                          <strong itemprop="name">UNO-Mission New York</strong>
-                          <span>Permanent Mission of Switzerland to the UN</span><br>
-                          <span itemprop="street-address">633, Third Avenue, 29th floor</span><br>
-                          <span itemprop="locality">New York</span>, <span itemprop="region">NY</span><span itemprop="postal-code">10017-6706</span><br>
-                          <span itemprop="country-name">United States of America</span>
-                        </address>
-                        <dl class="dl-horizontal">
-                          <dt><abbr title="Phone">Tel.</abbr></dt>
-                          <dd><a href="tel:+41 31 322 31 53">+41 31 322 31 53</a></dd>
-                          <dt>Fax</dt>
-                          <dd>+41 31 322 31 54</dd>
-                        </dl>
-                        <p>
-                          <a href="#" class="icon icon--before icon--message">Email</a><br>
-                          <a href="#" class="icon icon--before icon--list-alt">Contact form</a>
-                        </p>
-                        <h4>Visa</h4>
-                        <p><a href="#" class="icon icon--before icon--message">Email</a></p>
-                        <h4>Opening hours</h4>
-                        <p>Monday-Friday<br>
-                        09.00-12.00 AM</p>
-                        <p>Saturday and Sunday<br>
-                        closed</p>
-                      </div>
-                      <p class="hidden-xs"><a href="#" onclick="$.printPreview.printPreview('contact-info')" class="icon icon--before icon--print">Print contact infos</a></p>
-                    </div>
-                    <div class="tab-pane" id="map">
-                      <div data-print="address-info" data-title="Address">
-                        <h3>UNO-Mission New York</h3>
-                        <p>633, Third Avenue<br>
-                        New York, NY10017-6706</p>
-                        <p><img src="http://placehold.it/158x120" alt="Map"></p>
-                        <p><a href="#" class="icon icon--after icon--external">See on the map</a></p>
-                      </div>
-                      <p class="hidden-xs"><a href="#" onclick="$.printPreview.printPreview('address-info')" class="icon icon--before icon--print">Print address infos</a></p>
+                    <div data-print="contact-info" data-title="Contact" itemscope itemtype="http://schema.org/Person">
+                      <h4 itemprop="jobTitle">Direktor des Mont Terri Projektes</h4>
+                      <p itemprop="name">Dr. Paul Bossart</p>
+                      <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="name">Bundesamt für Landestopografie swisstopo</span>
+                        <span itemprop="streetAddress">Seftigenstrasse 264</span><br>
+                        <span itemprop="addressCountry">CH</span> - <span itemprop="postalCode">3084</span> <span itemprop="addressLocality">Wabern</span> (Schweiz)<br>
+                      </address>
+                      <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
                     </div>
                   </div>
 
-                  <br>
-                  <aside class="cart">
-                    <h4>Shopping Cart (3 items)</h4>
-                    <ul class="list-unstyled">
-                      <li class="clearfix">
-                        <span class="pull-left">Lorem ipsum product name a bit longer at <b>CHF 45.-</b></span>
-                        <a class="pull-right" href="#">
-                          <span class="icon icon--after icon--trash"><span class="sr-only">delete</span></span>
-                        </a>
-                      </li>
-                      <li class="clearfix">
-                        <span class="pull-left">Lorem ipsum <b>CHF 45.-</b></span>
-                        <a class="pull-right" href="#">
-                          <span class="icon icon--after icon--trash"><span class="sr-only">delete</span></span>
-                        </a>
-                      </li>
-                      <li class="clearfix">
-                        <span class="pull-left">Lorem ipsum <b>CHF 45.-</b></span>
-                        <a class="pull-right" href="#">
-                          <span class="icon icon--after icon--trash"><span class="sr-only">delete</span></span>
-                        </a>
-                      </li>
-                    </ul>
-                    <p>Total price <b>CHF 135.-</b></p>
-                    <p><a class="icon icon--before icon--cart" href="#">Show Shopping Cart</a></p>
-                  </aside>
-                  <br>
-                  <div class="bordered">
-                    <div class="rss well well-white">
-                      <h4 class="icon icon--before icon--rss">RSS</h4>
-                      <ul class="list-unstyled">
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Agenda</a></li>
-                        <li><a href="#">Events</a></li>
-                      </ul>
+                  <div class="col-sm-12 fixmargin">                <!-- Contextual information -->
+                    <a name="context-sidebar" class="hidden-print"></a>
+
+                    <div data-print="contact-info" data-title="Contact" itemscope itemtype="http://schema.org/Person">
+                      <h4 itemprop="jobTitle">Projektleiter des Mont Terri Projektes</h4>
+                      <p itemprop="name">Dr. Christophe Nussbaum</p>
+                      <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="name">Bundesamt für Landestopografie swisstopo</span>
+                        <span itemprop="streetAddress">Rue de la Gare 63</span><br>
+                        <span itemprop="addressCountry">CH</span> - <span itemprop="postalCode">2882</span> <span itemprop="addressLocality">St-Ursanne</span> (Schweiz)<br>
+                      </address>
+                      <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
                     </div>
                   </div>
-                  <br>
-                  <div class="well">
-                    <h4>Title in H4</h4>
-                    <img src="http://placehold.it/240x140" alt="image description">
-                    <p>
-                      Lorem ipsum dolor sit amet, consect.
-                    </p>
-                    <ul>
-                      <li><a href="#">Link n°1</a></li>
-                      <li><a href="#">Link n°2</a></li>
-                      <li><a href="#">Link n°3</a></li>
-                    </ul>
                 </div>
               </div>
             {% endblock %}
+
           </div>
         </div>
+
       </div>
     </div>
 
     <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 fixmargin">
+            <div class="list-group">
+
+              <div class="list-group-header">
+                <h2 class="pull-left">Partner</h2>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                  <a href="#"><img src="../../img/partner-1.png" alt="Image description"></a>
+                </div> 
+                <div class="col-sm-3 col-xs-6">
+                  <a href="#"><img src="../../img/partner-2.png" alt="Image description"></a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <a href="#"><img src="../../img/partner-3.png" alt="Image description"></a>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <a href="#"><img src="../../img/partner-4.png" alt="Image description"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="../../img/footer-1.png" alt="image description">
+          </div>
+        </div>
+      </div>
 
       <div class="container-fluid footer-service">
-        <h3>Statistik Schweiz</h3>
+        <h3>H3 nur sichtbar bei Mobile</h3>
         <nav>
           <ul>
-            <li><a href="#">Emergencies</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">H3 Rubriktitel Thema 01</a></li>
+            <li><a href="#">H3 Rubriktitel Thema 02</a></li>
+            <li><a href="#">H3 Rubriktitel Thema 03</a></li>
+            <li><a href="#">H3 Rubriktitel Thema 04</a></li>
           </ul>
         </nav>
       </div>
@@ -575,124 +684,73 @@ layout: empty
         <div class="container-fluid" id="site-map">
           <div class="row">
             <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
+              <h3><a href="#">H3 Rubriktitel Thema 01</a></h3>
               <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-                <li><a href="#">Geschäftstätigkeit in der Schweiz</a></li>
-                <li><a href="#">Ausländische Vertretungen in der Schweiz</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 01</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 01</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 01</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 01</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
+              <h3><a href="#">H3 Rubriktitel Thema 02</a></h3>
               <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-                <li><a href="#">Geschäftstätigkeit in der Schweiz</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 02</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 02</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 02</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 02</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
+              <h3><a href="#">H3 Rubriktitel Thema 03</a></h3>
               <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 03</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 03</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 03</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 03</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
+              <h3><a href="#">H3 Rubriktitel Thema 04</a></h3>
               <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-                <li><a href="#">Geschäftstätigkeit in der Schweiz</a></li>
-                <li><a href="#">Ausländische Vertretungen in der Schweiz</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-                <li><a href="#">Geschäftstätigkeit in der Schweiz</a></li>
-                <li><a href="#">Ausländische Vertretungen in der Schweiz</a></li>
-                <li><a href="#">Informationen zur Schweiz</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <h3>Einreise & Aufenthalt in der Schweiz</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">Einreise in die Schweiz</a></li>
-                <li><a href="#">Visabestimmungen</a></li>
-                <li><a href="#">Aufenthalt in der Schweiz</a></li>
-                <li><a href="#">Geschäftstätigkeit in der Schweiz</a></li>
-                <li><a href="#">Ausländische Vertretungen in der Schweiz</a></li>
-                <li><a href="#">Informationen zur Schweiz</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 04</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 04</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 04</a></li>
+                <li><a href="#">Link auf Unterrubrik Thema 04</a></li>
               </ul>
             </div>
           </div>
         </div>
+        <div style="clear:both;"></div>
       </div><!-- End of Site-map -->
+      <div class="social-and-links">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
 
-      <div class="container-fluid">
-        <h3>Informiert bleiben</h3>
-        <nav class="links-social">
-          <ul>
-            <li><a class="icon icon--before icon--twitter" href="#">Twitter</a></li>
-            <li><a class="icon icon--before icon--facebook" href="#">Facebook</a></li>
-            <li><a class="icon icon--before icon--rss" href="#">RSS Feed</a></li>
-            <li><a class="icon icon--before icon--message" href="#">Newsletter</a></li>
-          </ul>
-        </nav>
-
-        <h3 class="border-bottom">DEZA – Weltweit vor Ort</h3>
-        <p>
-          Besuchen Sie die Websites der Schweizer Kooperationsbüros.
-        </p>
-        <p>
-          <label for="country" class="sr-only">Country:</label>
-          <select id="country" name="country">
-            <option value="Switzerland">Switzerland</option>
-            <option value="France">France</option>
-            <option value="Germany">Germany</option>
-            <option value="...">...</option>
-          </select>
-        </p>
-        <hr class="footer-line visible-xs">
-        <img class="visible-xs" src="../../img/logo-CH.svg" onerror="this.onerror=null; this.src='../../img/logo-CH.png'" alt="back to home" />
-      </div>
-
-      <address>
-        <span class="hidden-xs">Bundesamt für Statistik</span>
-        <nav class="pull-right">
-          <ul>
-            <li><a href="#">Rechtliches</a></li>
-            <li><a href="#">Impressum</a></li>
-          </ul>
-        </nav>
-      </address>
+              <h3>Informiert bleiben</h3>
+              <nav class="links-social">
+                <ul>
+                  <li><a class="icon icon--before icon--twitter" href="#">Twitter</a></li>
+                  <li><a class="icon icon--before icon--facebook" href="#">Facebook</a></li>
+                  <li><a class="icon icon--before icon--rss" href="#">RSS Feed</a></li>
+                  <li><a class="icon icon--before icon--message" href="#">Newsletter</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <address>
+          <span class="hidden-xs"><a href="#">www.mont-terri.ch</a></span>
+          <nav class="pull-right">
+            <ul>
+              <li><a href="#">Rechtliches</a></li>
+              <li><a href="#">Impressum</a></li>
+            </ul>
+          </nav>
+        </address>
+      </div> 
     </footer>
-
 
   </div>
   <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">

@@ -9,6 +9,9 @@
 .collapse-box {
   padding: 0.8em;
   background: $smoke;
+  > a.active {
+    color: $A01;
+  }
 }
 
 a[data-toggle="collapse"] {
@@ -19,10 +22,16 @@ a[data-toggle="collapse"] {
   &.collapsed {
     @extend .icon--greater;
   }
+  &.active {
+    color: $A01;
+  }
 }
 
 .drilldown a[data-toggle="collapse"] {
   padding: 0 10px 10px 10px;
+  &[aria-expanded="true"] {
+    color: $A01;
+  }
 }
 
 .drilldown-container.collapse.in,
