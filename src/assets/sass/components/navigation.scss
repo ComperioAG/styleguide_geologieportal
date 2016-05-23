@@ -213,6 +213,7 @@ nav {
   > .open > a {
     z-index: 9999;
     background: $white;
+    color: $T02;
     // border-top: 5px solid $red;
     // margin-top: -5px;
     // height: 75px;
@@ -220,6 +221,7 @@ nav {
       background: $white;
     }
     &:after {
+      color: $B01;
       content: get-font-icon('top');
     }
   }
@@ -229,7 +231,10 @@ nav {
   }
   .dropdown.active > a,
   .dropdown.current > a {
-     background: $white;
+    background: $white;
+    &:after {
+      color: $B01;
+    }
      
     // border-top: 5px solid $red;
     // margin-top: -5px;
@@ -287,7 +292,6 @@ nav {
 
 
 .nav-services {
-  font-size: 0.85em;
   padding-top: 5px;
   h2 {display: none;}
   @media only screen and (max-width: $screen-sm-max) {

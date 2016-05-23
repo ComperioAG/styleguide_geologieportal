@@ -57,7 +57,9 @@
   &:focus {width: 200px;}
 }
 
-.search-field:focus + .icon--close:after {color: $A03;}
+.search-field:focus, .search-field:focus + .icon--close:after { 
+  color: $A03; 
+}
 
 /* Remove X button in IE10 */
 .search-field::-ms-clear { display: none; }
