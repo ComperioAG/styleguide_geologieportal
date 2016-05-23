@@ -25,7 +25,7 @@ ul.nav-tabs {
     border-radius: 0;
     box-sizing: border-box;
     background-color: $B02;
-    color: $T02;
+    color: $empress;
     border-top: 1px solid $white;
     border-left: 1px solid $white;
     border-right: 1px solid $white;
@@ -45,14 +45,14 @@ ul.nav-tabs {
   &.active > a:hover,
   &.active > a:focus {
     color: $T01;
-    background-color: $A01;
+    background-color: $A03;
   }
 
   &.active > a,
   &.active > a:hover, 
   &.active > a:focus {
     color: $T01;
-	background-color: $A01;
+	background-color: $A03;
 	border-top: 1px solid $white;
 	border-left: 1px solid $white;
 	border-right: 1px solid $white;
@@ -101,11 +101,11 @@ ul.nav-tabs {
     border-left: 1px solid $silver;
     font-size: 16px;
     padding: 12px 25px;
-    color: $T02;
+    color: $black;
     transition: all 0.2s;
 
     &:before {
-      color: $T02;
+      color: $black;
     }
     &:hover {
       text-decoration: none;

@@ -13,20 +13,20 @@ body,
 html {
   width: 100%;
   overflow-x: hidden;
-  color: $T02;
+  color: $black;
 }
 
 body,
 .body {
   position: relative;
-  background: $B03;
-  //background: -moz-linear-gradient(top, $A03 0%, $B04 25%);
-  //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$A03), color-stop(25%,$B04));
-  //background: -webkit-linear-gradient(top, $A03 0%,$B04 25%);
-  //background: -o-linear-gradient(top, $A03 0%,$B04 25%);
-  //background: -ms-linear-gradient(top, $A03 0%,$B04 25%);
-  //background: linear-gradient(to bottom, $A03 0%,$B04 25%);
-  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97e1aa', endColorstr='#f8f7f7',GradientType=0 );
+  background: $A03;
+  background: -moz-linear-gradient(top, $A03 0%, $B04 25%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$A03), color-stop(25%,$B04));
+  background: -webkit-linear-gradient(top, $A03 0%,$B04 25%);
+  background: -o-linear-gradient(top, $A03 0%,$B04 25%);
+  background: -ms-linear-gradient(top, $A03 0%,$B04 25%);
+  background: linear-gradient(to bottom, $A03 0%,$B04 25%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97e1aa', endColorstr='#f8f7f7',GradientType=0 );
   // background: url('../img/bg-striped.png') repeat;
 }
 

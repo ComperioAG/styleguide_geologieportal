@@ -116,5 +116,5 @@ $icon-list: (
 
 a.icon:hover, a.icon.focus {
   text-decoration: none; // fix to override normal bootstrap behaviour
-  color: $A04;
+  color: $A05;
 }

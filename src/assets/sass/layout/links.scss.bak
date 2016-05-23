@@ -15,10 +15,11 @@ a {
  font-weight: 500;
 
  &:hover {
-   color: $A04;
+   color: $A05;
    text-decoration: none;
  }
- &:active, &:visited, &:focus, &:active {text-decoration: none; color: $A05;}
+ &:active, &:visited, &:focus, &:active {text-decoration: none;}
+ &:visited {color: $A04;}
  p & {
    line-height: 1;
    text-decoration: none;

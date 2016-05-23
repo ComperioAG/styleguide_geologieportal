@@ -19,14 +19,14 @@
     font-weight: 500;
   }
   a:hover {
-	color: $A04;
+	color: $A05;
   }
   span.icon {
     position: relative;
     top: 2px;
   }
   li.active {
-    color: $T02;
+    color: $black;
   }
   &.breadcrumb--search {
     margin: 0.8em 0;

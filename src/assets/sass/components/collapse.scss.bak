@@ -10,7 +10,7 @@
   padding: 0.8em;
   background: $smoke;
   > a.active {
-    color: $A04;
+    color: $A01;
   }
 }
 
@@ -23,14 +23,14 @@ a[data-toggle="collapse"] {
     @extend .icon--greater;
   }
   &.active {
-    color: $A04;
+    color: $A01;
   }
 }
 
 .drilldown a[data-toggle="collapse"] {
   padding: 0 10px 10px 10px;
   &[aria-expanded="true"] {
-    color: $A04;
+    color: $A01;
   }
 }
 

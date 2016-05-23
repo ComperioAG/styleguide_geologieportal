@@ -135,7 +135,7 @@ nav {
 }
 
 .nav-main {
-  background: $B01;
+  background: $B02;
   // background: -moz-linear-gradient(top, #e4e4e4 0%, #e2e2e2 39%, #dddddd 79%, #d5d5d5 91%, #cfcfcf 95%, #bebebe 99%); /* FF3.6+ */
   // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4e4e4), color-stop(39%,#e2e2e2), color-stop(79%,#dddddd), color-stop(91%,#d5d5d5), color-stop(95%,#cfcfcf), color-stop(99%,#bebebe)); /* Chrome,Safari4+ */
   // background: -webkit-linear-gradient(top, #e4e4e4 0%,#e2e2e2 39%,#dddddd 79%,#d5d5d5 91%,#cfcfcf 95%,#bebebe 99%); /* Chrome10+,Safari5.1+ */
@@ -159,16 +159,16 @@ nav {
 
 .nav-main.yamm .nav {
   margin: 0 1.6em;
-  border-left: 1px solid $B04;
+  border-left: 1px solid $menu-border-dark;
   > li {
-    border-right: 1px solid $B04;
+    border-right: 1px solid $menu-border-dark;
     /* border-left: 1px solid $menu-border-light; */
     > a {
       height: 78px;
-      background: $B01;
+      background: $B02;
       //@include gradient-menu;
       max-width: 150px;
-      color: $white;
+      color: $T01;
       line-height: 1.5; // 24px
       font-weight:normal;
       padding: 10px 9px;
@@ -180,14 +180,14 @@ nav {
         left: 0;
         width: 100%;
         text-align: center;
-        color: $B04;
+        color: $coal;
         font-size: 0.9em;
       }
       &:hover, &:focus {
-        color: $T02;
+        //color: $T10;
         background: $white;
         &:after {
-          color: $B01;
+          color: $A01;
         }
         // background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0ZjRmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc5JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjkxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
         // background: -moz-linear-gradient(top,  #f4f4f4 0%, #ffffff 10%, #ffffff 79%, #ffffff 91%, #dbdbdb 100%);
@@ -236,7 +236,7 @@ nav {
   }
   .dropdown.current > a {
     z-index: 999;
-    color: $T02;
+    color: $T10;
     // font-weight: 700;
   }
   .dropdown.active > a,
@@ -329,18 +329,18 @@ nav {
     margin: 0;
   }
   a {
-    color: $T01;
+    color: $T11;
     padding: 4px;
     &:hover {
-      color: $A03;
+      color: $T10;
       text-decoration: none;
 	  }
     &.active {
-      color: $T01;
-      background: $B04;
+      color: $T10;
+      background: $B03;
       text-decoration: none;
       &:hover {
-        color: $A03;
+        color: $T10;
       }
       @media only screen and (max-width: $screen-xs-max) {
         background: $silver;
@@ -412,11 +412,11 @@ nav {
     }
   }
   .dropdown:first-child .dropdown-toggle {
-    border-left: 1px solid $B04;
+    border-left: 1px solid $silver;
     padding-left: 10px;
   }
   .nav .dropdown.open:first-child a.dropdown-toggle {
-    border-left-color: $B04;
+    border-left-color: $silver;
   }
   .dropdown-menu {
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
@@ -454,7 +454,7 @@ nav {
     display: none;
     .nav li {display: inline;}
     .dropdown-toggle {
-      border-left-color: $B04;
+      border-left-color: $silver;
       padding-left: 10px;
     }
     .dropdown-menu, .open .dropdown-menu {
@@ -478,7 +478,7 @@ nav {
     > span:first-child {
       border-bottom: 1px solid $black;
       display: block;
-      color: $T02;
+      color: $black;
       font-weight: bold;
       padding: 10px 0;
       @media screen and (max-width: $screen-xs-max) {
@@ -518,7 +518,7 @@ nav {
     padding-bottom: 13px !important;
     padding-left: 0px !important;
     &:hover {
-      color: $A03;
+      color: $A01;
     }
   }
   a {
@@ -530,11 +530,11 @@ nav {
   .icon--less,
   .icon--power {
     background: $white;
-    color: $T02;
+    color: $black;
     padding: 10px;
-    border-bottom: 1px solid $T02;
-    border-top: 1px solid $T02;
-    &:first-child { border-top: 1px solid $T02; }
+    border-bottom: 1px solid $black;
+    border-top: 1px solid $black;
+    &:first-child { border-top: 1px solid $black; }
     &:before {
       font-size: 1.5em;
       padding-right: 10px;
@@ -562,7 +562,7 @@ nav {
       width: 5px;
     }
     &.active {
-      color: $T01;
+      color: $A01;
       padding: 10px 0;
       @media screen and (max-width: $screen-xs-max) {
         padding: 10px;
@@ -588,7 +588,7 @@ nav {
       }
     }
     a {
-      color: $T01;
+      color: $T11;
       padding: 10px 0;
       @media only screen and (max-width: $screen-xs-max) { padding: 10px; }
       position: relative;
@@ -602,7 +602,7 @@ nav {
         width: 5px;
       }
       &:active {color: $black;}
-	  &:hover {color: $A03;}
+	  &:hover {color: $A01;}
     }
   }
   .list-sub {

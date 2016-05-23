@@ -78,7 +78,7 @@
       &.active > a:hover,
       &.active > a:focus {
         //color: $venetian-red;
-        background-color: $A01;
+        background-color: $A03;
 
         &::before {
           content: '';
@@ -112,12 +112,12 @@
       &.active a:hover {
         border: none !important;
         background: $gainsboro;
-        color: $T02;
+        color: $black;
       }
 
       &:hover a {
         padding-top: 10px !important; // override nav-tabs behaviour
-		    background: $A01;
+		    background: $A03;
       }
     }
   }

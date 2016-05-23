@@ -14,7 +14,7 @@
   border-radius: 3px;
   line-height: 1.2;
   background-color: $smoke;
-  border: none;
+  border: 1px solid $empress;
   font-weight: 100;
   &:hover, &:focus {
     background-color: $light-grey;

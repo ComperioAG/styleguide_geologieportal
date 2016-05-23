@@ -14,29 +14,23 @@
 //=============================================================================
 
 $B01:									     #877a71;
-$B02:			                             #dbd7d4;
-$B03:										 #f3f2f1;
-$B04:									  	 #ffffff;
-
+$B02:			                             #dbd8d7;
+$B03:										 #f1f0ef;
+$B04:									  	 #f8f7f7;
 $T01:										 #616161; 
-$T02:										 #373535;
+$T02:										 #000000;
+$A01:										 #3b8f44; // T01, T02
+$A02:										 #00c853;
+$A03:										 #97e1aa;
+$A04:										 #0288d1;
+$A05:										 #80D8ff; // korrekter Farbwert? Designsensor
 
-$A01:										 #cfc500; 
-$A02:										 #a1a215;
-$A03:										 #0288d1;
-$A04:										 #024c75;
-$A05:										 #35a0d8;
+$T04:										 #0288d1;
+$T10:										 #3b8f44;
+$T11:										 #616161;
 
-$TH01:										 #643c80;
-$TH02:										 #004b66;
-$TH03:										 #7d774e;
-$TH04:										 #913644;
-$TH05:										 #ac9011;
-$TH06:										 #618073;
-$TH07:										 #7b868f;
-$TH08:										 #a2a315;
 
-$venetian-red:                               #cfc500; // A01
+$venetian-red:                               #3b8f44;
 $red:                                        #F7001D;
 $mocassin:                                   #fffab2;
 $cerulean:                                   #0288d1; // T04
@@ -46,14 +40,14 @@ $solitude:                                   #e7edef;
 $clear-day:                                  #f2f7f9;
 
 $black:                                      #000000;
-$night-rider:                                #373535; // T02
+$night-rider:                                #000000; // 
 $coal:                                       #877a71; // B01
-$empress:                                    #616161; // T10
+$empress:                                    #616161; // T11
 $silver:                                     #CCCCCC; // gray 20%;
 $light-grey:                                 #D5D5D5; // gray 16%;
-$gainsboro:                                  #cfc500; // A01
-$smoke:                                      #dbd7d4; // B02
-$white:                                      #FFFFFF; // B04
+$gainsboro:                                  #97e1aa;  
+$smoke:                                      #dbd8d7; // B02
+$white:                                      #FFFFFF; // B05
 
 
 $sherpa-blue:                                #03344D;
@@ -61,8 +55,8 @@ $fire-engine-red:                            #bb1122;
 $cadillac:                                   #0288d1;
 
 $menu-gradient:                              linear-gradient(top, #e8e8e8 0%, #f7f7f7 61%, #f7f7f7 89%, #f5f5f5 91%, #ececec 95%, #d7d7d7 100%);
-$menu-border-dark:                           $white; 
-$menu-border-light:                          $white; 
+$menu-border-dark:                           $white; // B05
+$menu-border-light:                          $white; // B05
 
 
 // TYPOGRAPHY
