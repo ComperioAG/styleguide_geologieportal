@@ -170,7 +170,7 @@ nav {
       max-width: 150px;
       color: $white;
       line-height: 1.5; // 24px
-      font-weight:normal;
+      font-weight: 500;
       padding: 10px 9px;
       &:after {
         content: get-font-icon('bottom');
@@ -230,6 +230,7 @@ nav {
   .dropdown.active > a,
   .dropdown.current > a {
      background: $white;
+     
     // border-top: 5px solid $red;
     // margin-top: -5px;
     // height: 75px;

@@ -9,46 +9,32 @@
  * Licensed under MIT
  =========================================================== */
 
-h1 {
-  color: $T02;
-  font-weight: 300;
-}
-
-h2 {
-  color: $T02;
-  font-weight: bold;
-}
-
-h3 {
-  color: $T02;
-  font-weight: bold;
-}
-
-h4 {
-  color: $T02;
-  font-weight: bold;
-}
-
 h1, .h1 {
+  color: $T02;
+  font-weight: 500;
   line-height: 1.25;
 }
 
 h2, .h2 {
+  color: $T02;
+  font-weight: bold;
   line-height: 1.4;
 }
 
 h3, .h3 {
-  line-height: 1.333;
   color: $T02;
+  font-weight: bold;
+  line-height: 1.333;
 } 
 
 h4, .h4 {
+  color: $T02;
+  font-weight: bold;
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   a {
-    line-height: 1;
     font-size: 1em;
     padding: 0;
     margin: 0;
