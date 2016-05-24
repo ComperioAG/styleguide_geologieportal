@@ -10,7 +10,6 @@
  ========================================================== */
 
 footer {
-  padding-top: 60px;
   .container-fluid {
     background: $B04;
     padding-top: 0px;
@@ -29,7 +28,7 @@ footer {
     min-width: 200px;
   }
   a {
-    line-height: 2em;
+    //line-height: 2em;
   }
   h3 {
     margin: 0;
@@ -86,9 +85,8 @@ address {
 }
 
 .site-map {
-  div[class*=col-] {
-    padding-left: 30px;
-    padding-right: 30px;
+  > .container-fluid {
+    padding-top: 15px;
   }
   @media only screen and (max-width: $screen-xs-max) {display: none;}
   position: relative;
@@ -116,7 +114,7 @@ address {
   a {
     //font-size: 13px;
     display: inline-block;
-    padding: 3px 0;
+    padding: 10px 0;
   }
 }
 
@@ -175,8 +173,6 @@ footer {
   }
   div[class*=col-] {
     margin-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
   @media only screen and (max-width: $screen-sm-max) {
     h3 {
@@ -191,8 +187,8 @@ footer {
   }
   @media only screen and (min-width: $screen-sm-min) {
     address {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
   @media only screen and (max-width: $screen-xs-max) {
