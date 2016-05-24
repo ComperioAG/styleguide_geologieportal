@@ -1,0 +1,342 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Mont-Terri Hauptseite{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+{% block backgroundcolor %}background-b03{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block sidebar_right %}{% endblock %}
+{% block content_columns %}col-sm-12 fixmargin{% endblock %}
+
+{% block content %}
+  <div class="col-sm-12 fixmargin">
+
+    <div class="row">
+      <div class="col-md-9">
+
+        <!-- focus panes -->
+        <div class="tab-content tab-border tab-focus">
+          <button class="tab-focus-control btn btn-sm"><span class="icon icon--pause"></span></button>
+
+          <div class="tab-pane" id="home">
+            <div class="row">
+              <div class="col-sm-7"><img src="http://placehold.it/588x368" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Lorem ispum title 1</h2>
+                <p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Occultum facinus esse potuerit.</p>
+                <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane active in" id="profile">
+            <div class="row">
+              <div class="col-sm-7"><img src="../../img/focus-1.png" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Alpenbildung</h2>
+                <p>Die Glarner Überschiebung ist Teil des UNESCO Weltnaturerbes "Tektonikarena Sardona".</p>
+                <p><a href="#">Mehr Informationen zur Alpenbildung</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="messages">
+            <div class="row">
+              <div class="col-sm-7"><img src="http://placehold.it/588x368" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Lorem ispum title 3</h2>
+                <p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Occultum facinus esse potuerit.</p>
+                <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="settings">
+            <div class="row">
+              <div class="col-sm-7"><img src="http://placehold.it/588x368" alt="image description"></div>
+              <div class="col-sm-5 nopadding-left">
+                <h2>Lorem ispum title 4</h2>
+                <p>4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Occultum facinus esse potuerit.</p>
+                <p><a href="#" class="icon icon--after icon--external">An external link</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- focus tabs -->
+        <ul class="nav nav-tabs nav-tabs-focus nav-justified">
+          <li><a href="#home" data-toggle="tab">Interpretierten Profils aus dem Seismischen Atlas</a></li>
+          <li class="active"><a href="#profile" data-toggle="tab">Alpenbildung</a></li>
+          <li><a href="#messages" data-toggle="tab">Geothermie</a></li>
+          <li><a href="#settings" data-toggle="tab">Rohstoffe</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <!-- News list example -->
+        <div class="list-group news-feed">
+          <div class="list-group-header">
+            <h2 class="pull-left">Aktuell</h2>
+          </div>
+          <div class="scroll-y">
+            <div class="list-group-item">
+              <p>
+                15.03.2016<br>
+              </p>
+              <a href="#">
+                Schweizerischer Geologentag
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p>
+                05.02.2016<br>
+              </p>
+              <a href="#">
+                Pompes à chaleur: formation continue et congrès
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p>
+                15.01.2016<br>
+              </p>
+              <a href="#">
+                Cycle de conférences "La Terre, une planète à risques"
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm-4 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Thema des Monats</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../../img/bigtopic-1.png" alt="Image description">
+              <div class="imgtopic">
+                <p>Geologische und geologierelevante Daten suchen, ansehen, abfragen und herunterladen. Unter map.geologieportal.ch bietet Ihnen das «Thema Geologie» des Kartenviewers des Geoportals Bund (map.geo.admin.ch) jetzt diese Funktionen für mehr als 80 Datensätze mit Bezug zur Geologie. Weitere Datensätze werden kontinuierlich integriert.</p>
+                <p><a href="#">Mehr Informationen</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Geologischer Datenviewer</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../../img/topic-1.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">Geologie auf map.geo.admin.ch</a></h3>
+                <p>Geologische Karten, Geophysikalische Übersichtskarten, Geotechnische Karten und weitere geologierelevante Datensätze in Kartendarstellung.</p> 
+                <p><a href="#">map.geo.admin.ch</a></p>
+              </div>
+            </div> 
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Nutzen Sie die Gelegenheit!</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="../../img/topic-2.png" alt="Image description">
+              <div class="imgtopic">
+                <p><a href="#">... Ihre News</a></p>
+                <p><a href="#">... Ihre Veranstaltungen</a></p>
+                <p><a href="#">... Ihre Jobangebote</a></p>
+                <p><a href="#">... Ihre Neuerscheinungen</a></p>
+              </div>
+            </div> 
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Inhalte</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="../../img/topic-3.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">Kontakte</a></h3>
+                <p>Die Schweizer Geologie-Szene besteht aus einer Vielzahl von Organisationen. Finden Sie hier Kontaktinformationen zu den Mitgliedern der Geologie-Szene, eine Übersicht über der ...</p> 
+              </div>
+            </div> 
+            <div class="col-sm-4">
+              <img src="../../img/topic-4.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">Erleben</a></h3>
+                <p>Ob für Kinder oder für Erwachsene: Museen, Schaubergwerke, Geoparks oder Geowanderwege bieten zahlreiche Möglichkeiten, sich von der Geologie begeistern zu lassen.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img src="../../img/topic-5.png" alt="Image description">
+              <div class="imgtopic">
+                <h3><a href="#">Shops & Downloads</a></h3>
+                <p>Interessieren Sie sich für geologierelevante Daten, topografische oder geologische Karten? Suchen Sie einen unveröffentlichten geologischen Bericht oder eine wissensch...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <!-- News list example -->
+        <div class="list-group news-feed">
+          <div class="list-group-header">
+            <h2 class="pull-left">Veranstaltungen</h2>
+          </div>
+          <div class="scroll-y">
+            <div class="list-group-item">
+              <p>
+                23.03.2016<br>
+              </p>
+              <a href="#">
+                Weisse Wannen planen - konstruieren - ausführen
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p>
+                31.03.2016<br>
+              </p>
+              <a href="#">
+                Burgdorfer Abwassertag 2016
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p>
+                13.04.2016<br>
+              </p>
+              <a href="#">
+                PLANAT-Plattformtagung 2016 Wie steht es ums Integrale Risikomanagement Naturgefahren?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="col-md-12 fixmargin">
+        <div class="list-group">
+
+          <div class="list-group-header">
+            <h2 class="pull-left">Themen</h2>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-3 col-sm-6 fixmargin"> 
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-2.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-3 col-sm-6 fixmargin"> 
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-3.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-4.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-3 col-sm-6 fixmargin"> 
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-5.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-6.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class="col-md-3 col-sm-6 fixmargin"> 
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-7.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="themen">
+                    <a href="#">
+                      <img src="../../img/themen-1.png" alt="Image description">
+                      <img src="../../img/themen-8.png" alt="Image description">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+          </div> 
+            
+        </div>
+      </div>
+    </div>
+  </div> 
+{% endblock %}
