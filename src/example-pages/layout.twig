@@ -419,38 +419,90 @@ layout: empty
             
             {% block sidebar_right %}
               <div class="col-md-4">
-                <div class="row sidebar-right-contact">
-                  <div class="col-sm-12">                <!-- Contextual information -->
-                    <a name="context-sidebar" class="hidden-print"></a>
+                <div class="row sidebar-right">
 
+                  {% block sidebar_right_part1 %}
+                  <!-- Part 1 -->
+                  <div class="col-sm-12">
                     <h2>Fachkontakt</h2>
 
                     <div data-print="contact-info" data-title="Contact" itemscope itemtype="http://schema.org/Person">
-                      <h4 itemprop="jobTitle">Direktor des Mont Terri Projektes</h4>
-                      <p itemprop="name">Dr. Paul Bossart</p>
-                      <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="name">Bundesamt für Landestopografie swisstopo</span>
-                        <span itemprop="streetAddress">Seftigenstrasse 264</span><br>
-                        <span itemprop="addressCountry">CH</span> - <span itemprop="postalCode">3084</span> <span itemprop="addressLocality">Wabern</span> (Schweiz)<br>
-                      </address>
+                      <b itemprop="name">Milan Beres</b>
+                      <p itemprop="honorificPrefix">Dr. sc. nat.</p>
+                      <p itemprop="jobTitle">Wissenschaftlicher Mitarbeiter</p>
+                      <div itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">
+                        <p itemprop="name">swisstopo / Landesgeologie</b>
+                      </div>
+                      <p>Tel. <span itemprop="telephone">+41 58 469 05 74</span></p>
+                      <p>Fax <span itemprop="faxNumber">+41 58 469 05 45</span></p>
                       <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
                     </div>
                   </div>
+                  <!-- End Part 1 -->
+                  {% endblock %}
 
-                  <div class="col-sm-12 fixmargin">                <!-- Contextual information -->
-                    <a name="context-sidebar" class="hidden-print"></a>
+                  {% block sidebar_right_part2 %}
+                  <!-- Part 2 -->
+                  <div class="col-sm-12">                <!-- Contextual information -->
+                    <div class="list-group">
 
-                    <div data-print="contact-info" data-title="Contact" itemscope itemtype="http://schema.org/Person">
-                      <h4 itemprop="jobTitle">Projektleiter des Mont Terri Projektes</h4>
-                      <p itemprop="name">Dr. Christophe Nussbaum</p>
-                      <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="name">Bundesamt für Landestopografie swisstopo</span>
-                        <span itemprop="streetAddress">Rue de la Gare 63</span><br>
-                        <span itemprop="addressCountry">CH</span> - <span itemprop="postalCode">2882</span> <span itemprop="addressLocality">St-Ursanne</span> (Schweiz)<br>
-                      </address>
-                      <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
+                      <div class="list-group-header">
+                        <h2 class="pull-left">Nutzen Sie die Gelegenheit!</h2>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <img src="../../img/topic-2.png" alt="Image description">
+                          <div class="imgtopic">
+                            <p><a href="#">... Ihre News</a></p>
+                            <p><a href="#">... Ihre Veranstaltungen</a></p>
+                            <p><a href="#">... Ihre Jobangebote</a></p>
+                            <p><a href="#">... Ihre Neuerscheinungen</a></p>
+                          </div>
+                        </div> 
+                      </div>
+
                     </div>
                   </div>
+                  <!-- End Part 2 -->
+                  {% endblock %}
+
+                  {% block sidebar_right_part3 %}
+                  <!-- Part 3 -->
+                  <div class="col-sm-12">
+                    <h2>Fachkontakt</h2>
+
+                    <div data-print="contact-info" data-title="Contact" itemscope itemtype="http://schema.org/Organization">
+                      <div itemprop="department" itemscope itemtype="http://schema.org/Organization">
+                        <b itemprop="name">Abteilung Gefahrenprävention (BAFU)</b>
+                        <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
+                      </div>
+                      <br/> 
+                      <div itemprop="department" itemscope itemtype="http://schema.org/Organization">
+                        <b itemprop="name">Naturgefahren, PLANAT</b>
+                        <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
+                      </div> 
+                      <br/>
+                      <div itemprop="department" itemscope itemtype="http://schema.org/Organization">
+                        <b itemprop="name">Naturgefahren Gletscher</b>
+                        <a href="#mailto:mail@mail.mail" class="icon icon--before icon--message" itemprop="email">E-Mail</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Part 3 -->
+                  {% endblock %}
+
+                  {% block sidebar_right_part4 %}
+                  <!-- Part 4 -->
+                  <div class="col-sm-12">
+                    <h2>Tipps & Tricks zum "Thema Geologie"</h2>
+                    <p>Geologierelevante Daten im Bundesgeoportal</p>
+                    <p>(map.geo.admin.ch)</p>
+                    <a href="#" class="icon icon--before icon--pdf">Factsheet Thema Geologie [PDF, 531KB]</a>
+                  </div>
+                  <!-- Part 4 -->
+                  {% endblock %}
+
                 </div>
               </div>
             {% endblock %}

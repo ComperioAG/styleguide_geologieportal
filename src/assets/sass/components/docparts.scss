@@ -27,11 +27,7 @@ article {
 	}
 }
 
-.sidebar-right-contact {
-	background-color: $B04;
-	h2 {
-		margin-top: 15px;
-	}
+.sidebar-right {
 	h4 {
 		margin-top: 0px;
 	}
@@ -41,6 +37,32 @@ article {
 	&.row {
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+	p {
+		margin: 0px;
+	}
+	a {
+		margin-top: 10px;
+		display: inline-block;
+	}
+	div[class*=col-] {
+		background-color: $B03;
+		padding: 15px;
+	}
+	
+	.list-group {
+		margin: -15px;
+		.list-group-header {
+			background-color: $B04;
+		}
+		.row, div[class*=col-] {
+			margin: 0px;
+			padding: 0px;
+		}
+		.imgtopic {
+			background-color: $B03;
+			padding: 5px 15px 15px 15px;
+		}
 	}
 }
 
