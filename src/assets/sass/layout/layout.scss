@@ -54,8 +54,8 @@ body,
     margin-top: 0;
   }
 
-  &.background-b03{
-    background: $B03;
+  &.background-b04{
+    background: $B04;
   }
 
   &.background-white{
@@ -76,4 +76,8 @@ div[class*=col-] {
 
 .fixmargin {
   margin-bottom: 0px !important;
+}
+
+.fixhauptseitemargin {
+  margin-bottom: -60px !important;
 }
