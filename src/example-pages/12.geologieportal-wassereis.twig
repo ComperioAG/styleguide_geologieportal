@@ -1,6 +1,6 @@
 {% extends "layout.twig" %}
 
-{% block pagetitle %}Mont-Terri Textseite{% endblock %}
+{% block pagetitle %}Geologie-Portal Wasser & Eis{% endblock %}
 
 {% block breadcrumb %}
   <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
@@ -8,7 +8,8 @@
       <h2 id="br1" class="hidden">Breadcrumbs</h2>
       <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
         <li><a href="#">Geologie-Portal</a><span class="icon icon--greater"></span></li>
-        <li class="active" aria-selected="true">Grundlagen der Geologie</li>
+        <li><a href="#">Geologische Gefahren</a><span class="icon icon--greater"></span></li>
+        <li class="active" aria-selected="true">Wasser & Eis</li>
       </ol> 
     </div> 
   </div>
@@ -23,18 +24,15 @@
           <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Geologie-Portal</a>
           <ul>
             <!-- the .list-emphasis class is optionnal --> 
-            <li class="list-emphasis active" aria-selected="true">
-              <span>Grundlagen der Geologie <span class="sr-only"> active</span></span>
+            <li class="list-emphasis">
+              <span>Geologische Gefahren </span>
               <ul>
                 <!-- add the .list-sub class if the list has some animated sub-lists -->
-                <li><a href="#">Tektonik / Strukturgeologie</a></li>
-                <li><a href="#">Geophysik</a></li>
-                <li><a href="#">Geotechnik & Ingenieurgeologie</a></li>
-                <li><a href="#">Quartärgeologie</a></li>
-                <li><a href="#">3D-Geologie</a></li>
-                <li><a href="#">Bohrungen</a></li>
-                <li><a href="#">Geologische Kartografie</a></li>
-                <li><a href="#">Stratigraphie</a></li>
+                <li><a href="#">Erdbeben</a></li>
+                <li><a href="#">Steinschlag, Rutschungen ...</a></li>
+                <li class="active" aria-selected="true"><a href="#">Wasser & Eis</a><span class="sr-only"> active</span></li>
+                <li><a href="#">Natürliche Umweltbelastungen</a></li>
+                <li><a href="#">Antropogene Umweltbelastung</a></li>
               </ul>
             </li>
           </ul>
@@ -59,64 +57,70 @@
             <div class="col-sm-12">
               <h1 class="page-title">Grundlagen der Geologie</h1>
               <figure>
-                <img src="../../img/article-1.png" alt="image description">
-                <figcaption>Die traditionellen Arbeitsinstrumente des Geologen: Hammer, Feldbuch und Lupe.<br/>
-                (© Greg van der Bleeken)</figcaption>
+                <img src="../../img/article-3.png" alt="image description">
+                <figcaption>Überschwemmung in Thun, 2005. (&copy; PLANAT)</figcaption>
               </figure>
             </div>
           </div>
           <div class="row"> 
             <div class="col-sm-12">
-              <h4>Welche Disziplinen gehören zur Geologie? Wer befasst sich mit dem tiefen Untergrund, mit Erdbau oder Erdgeschichte? Wo stehen physikalische oder chemische Eigenschaften im Vordergrund, wo Oberflächenprozesse, wo die Interaktion mit dem Lebensraum?</h4>
-
-              <p>Verschaffen Sie sich den Überblick: Von der Geophysik über die Hydrogeologie bis zur Paläontologie finden Sie hier grundlegende Informationen. Erfahren Sie mehr über Ziele, Fragestellungen und Arbeitsmethoden der einzelnen Fachgebiete. Und wenn Sie mehr wissen möchten: Datenbanken und Kontaktadressen nennen wir Ihnen ebenfalls auf unseren Seiten.</p> 
+              <h2>Ob flüssig oder gefroren: Wasser kann zu einer Vielfalt von Naturgefahren führen.</h2>
             </div>
           </div>
         </article>
-        <div class="row">
+
+        <div class="row"> 
           <div class="col-sm-6">
-            <img src="../../img/article-2.png">
-          </div>
-          <div class="col-sm-6">
-            <h3><a href="#">Tektonik / Strukturgeologie</a></h3>
-            <p>Im Inneren unserer Erde wirken seit jeher enorme Kräfte. Sie verformen die Erdkruste kontinuierlich und beeinflussen ihren strukturellen Aufbau. Tektonische Karten zeigen, wie die Schweiz geologisch aufgebaut ist.</p>
+            <img src="../../img/article-4.png">
           </div>
         </div>
+
         <div class="row">
-          <div class="col-sm-6">
-            <h3><a href="#">Geophysik</a></h3>
-            <p>Die Geophysik befasst sich mit allen die Erde betreffenden physikalischen Erscheinungen. Sie umfasst verschiedenste Teilgebiete und lässt sich nach Forschungsmethoden und deren Anwendungsbezug unterteilen.</p>
-          </div>
-          <div class="col-sm-6">
-            <h3><a href="#">Geotechnik & Ingenieurgeologie</a></h3>
-            <p>Die Geotechnik vereint als Ingenieurwissenschaft Elemente der Geowissenschaften, des Bauwesens und des Bergbaus. Tunnelprojekte, Hangsicherungen oder Baugrunduntersuchungen sind typische Einsatzgebiete.</p>
+          <div class="col-sm-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#kurzbeschreibung" data-toggle="tab">Kurzbeschreibung</a></li>
+              <li><a href="#whoiswho" data-toggle="tab">Who is who</a></li>
+              <li><a href="#daten" data-toggle="tab">Daten</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-border">
+              <div class="tab-pane active" id="kurzbeschreibung">
+                <b>Gefährdungen durch Hochwasser</b> 
+                <p>Bei einem Hochwasser überschreiten Wasserstand oder Wassermenge eines Gewässers einen bestimmten Schwellenwert. Typische Ursachen sind intensiver oder langandauernder Regen und/oder Schneeschmelze. Die Wassermassen können rasch zunehmen und Sand oder Geröll enthalten. In steilen Gerinnen, wie in Wildbächen in den Bergen, dominieren intensive Geschiebeumlagerungen und -ablagerungen aus Sand und Geröll. Es kommt zu Übermurungen, Ufererosionen und Übersarungen.</p>
+                <b>Murgänge</b>
+                <p>Ein Murgang ist ein talwärts fliessender Strom aus Schlamm und gröberem Gestein. Murgänge treten nur in Wildbachgebieten mit meist über 15 Prozent Bachgefälle auf.</p>
+                <p>Typisch für Murgänge: die hohe Dichte, die oft hohe Fliessgeschwindigkeit und die gewaltige Transportkapazität. Ein Murgang kann ganze Bäume und Blöcke von mehreren Kubikmetern Volumen mitführen und grosse Schäden anrichten.</p>
+                <b>Überschwemmungen, Ufer- und Sohlenerosion</b>
+                <p>Flachere Gewässer im Tal gefährden durch Überschwemmungen. Auch Ufer und Sohlenerosion können auftreten. Sie führen zu Unterspülungen oder zu Sohlenauflandungen. Überschwemmungen werden gefährlich, wenn im Überflutungsbereich grosse Wassertiefen oder starke Strömungen auftreten. Dabei kann auch viel Geschiebe abgelagert werden.</p>
+                <p>Stark strömendes Wasser kann Feststoffe vom Ufer oder von der Gerinnesohle aufnehmen und transportieren. Der Gerinnelauf wird folglich verlagert. Uferrutschungen können Bauwerke und Anlagen am Gewässer gefährden. Das mitgeschleppte Geschiebe beschädigt oft Kulturland und Bauten.</p>
+                <a href="#" class="icon icon--before icon--greater">mehr lesen</a>
+              </div> 
+              <div class="tab-pane" id="whoiswho">in diesem Tab ist nichts (1)</div>
+              <div class="tab-pane" id="daten">in diesem Tab ist nichts (2)</div>
+            </div>
           </div>
         </div>
+
         <div class="row">
-          <div class="col-sm-6">
-            <h3><a href="#">Quartärgeologie</a></h3>
-            <p>Das Quartär ist der jüngste Zeitabschnitt der Erdgeschichte: Die letzten 2,6 Millionen Jahre. Es ist gekennzeichnet durch die Erscheinung der Mensch sowie wiederholte Eiszeit/Warmzeit Zyklen, welche die Gebirge und deren Umfeld stark beeinflussten.</p>
-          </div>
-          <div class="col-sm-6">
-            <h3><a href="#">3D-Geologie</a></h3>
-            <p>Geologische 3D-Modelle stellen für die Infrastruktur- und Raumplanung einen zentralen Lösungsansatz dar. Die räumliche Darstellung bietet viele Vorteile.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <h3><a href="#">Bohrungen</a></h3>
-            <p>Bohrungen vermitteln Informationen über die Beschaffenheit des Untergrunds. Oder sie dienen einem konkreten Nutzen: beispielsweise zur
-Erdgasförderung oder als Vorbereitung für Baumassnahmen.</p>
-          </div>
-          <div class="col-sm-6">
-            <h3><a href="#">Geologische Kartografie</a></h3>
-            <p>Geologische Karten stellen eine Vielzahl geologisch relevanter Informationen übersichtlich dar. Sie sind eine wichtige Grundlage für geotechnische und umweltrelevante Entscheidungen.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <h3><a href="#">Stratigraphie</a></h3>
-            <p>Stratigraphie befasst sich als geologische Disziplin mit der räumlichen Lage und zeitlichen Abfolge von Gesteinskörpern. Mittels Stratigraphie werden Gesteinskörper datiert und untereinander korreliert.</p>
+          <div class="col-sm-12">
+            <h2>Links</h2>
+
+            <h4>Hochwasser und Murgänge</h4>
+            <p><a href="#" class="icon icon--after icon--external">Bundesamt für Umwelt</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Nationale Plattform Naturgefahren</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Eidg. Forschungsanstalt für Wald, Schnee und Landschaft</a></p>
+            <br/> 
+            <h4>Hochwasser und Murgänge</h4> 
+            <p><a href="#" class="icon icon--after icon--external">Bundesamt für Umwelt</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Swiss Permafrost Monitoring Network</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Expertenkommission Kryosphäre</a></p>
+            <p><a href="#" class="icon icon--after icon--external">PermaNET</a></p>
+            <br/>
+            <h4>Gletscher</h4> 
+            <p><a href="#" class="icon icon--after icon--external">Versuchsanstalt für Wasserbau, Hydrologie und Glaziologie, ETHZ</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Geographisches Institut der Universität Zürich</a></p>
           </div>
         </div>
       </div>

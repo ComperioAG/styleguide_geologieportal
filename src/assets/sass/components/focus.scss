@@ -19,6 +19,17 @@
     border-left: 1px solid $silver;
     margin-top: 0;
 
+    > li {
+      > a,
+      > a:hover,
+      > a:focus,
+      &.active > a,
+      &:active > a:hover,
+      &:active > a:focus {
+        padding-left: 15px;
+      }
+    }
+
     &:after {
       content: '';
       display: block;
