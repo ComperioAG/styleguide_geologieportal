@@ -1,0 +1,211 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Geologie-Portal Datenviewer{% endblock %}
+
+{% block breadcrumb %}
+  <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
+    <div class="col-sm-12 fixmargin">
+      <h2 id="br1" class="hidden">Breadcrumbs</h2>
+      <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+        <li><a href="#">Geologie-Portal</a><span class="icon icon--greater"></span></li>
+        <li><a href="#">Daten</a><span class="icon icon--greater"></span></li>
+        <li class="active" aria-selected="true">Datenviewer</li>
+      </ol> 
+    </div> 
+  </div> 
+{% endblock %} 
+
+{% block sidebar %}
+  <div class="col-sm-4 col-md-3 drilldown">
+    <div class="col-sm-12">
+      <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
+      <div class="drilldown-container">
+        <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+          <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Geologie-Portal</a>
+          <ul>
+            <!-- the .list-emphasis class is optionnal --> 
+            <li class="list-emphasis">
+              <span>Daten</span>
+              <ul>
+                <!-- add the .list-sub class if the list has some animated sub-lists -->
+                <li><a href="#">Shops & Downloads</a></li>
+                <li class="active" aria-selected="true"><a href="#">Datenviewer</a><span class="sr-only"> active</span></li>
+                <li><a href="#">Metadaten</a></li>
+                <li><a href="#">Revisionsdienst</a></li>
+                <li><a href="#">Geologische 3D-Modelle</a></li>
+                <li><a href="#">Statistik</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar_right_part2 %}
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-8 fixmargin">
+    <div class="row">
+      <div class="col-sm-12 fixmargin">
+        <article>
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="page-title">Datenviewer</h1>
+              <figure>
+                <img src="../../img/article-5.png" alt="image description">
+                <figcaption>Datenviewer - Interaktiver Zugang zu geologierelevanten Daten.</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-sm-12">
+              <h2>Ist das Kartenblatt Piz Bernina schon gedruckt? Auf welchem Boden steht mein Haus? Die Antworten auf solche und andere Fragen finden sich im «Thema Geologie» auf dem von swisstopo entwickelten Viewer «map.geo.admin.ch».</h2>
+              <p><a href="#" class="icon icon--after icon--external">Geologischer Datenviewer</a></p>
+              <p><a href="#" class="icon icon--after icon--external">Weitere geologierelevante Kartenviewer</a></p>
+              <p><a href="#" class="icon icon--after icon--external">Thematische Bundesgeoportale</a></p>
+            </div>
+          </div>
+        </article>
+
+        <div class="row"> 
+          <div class="col-sm-6">
+            <img src="../../img/article-6.png">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#kurzbeschreibung" data-toggle="tab">Kurzbeschreibung</a></li>
+              <li><a href="#kartenviewer" data-toggle="tab">Weitere Kartenviewer</a></li>
+              <li><a href="#bundesgeoportale" data-toggle="tab">Bundesgeoportale</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-border">
+              <div class="tab-pane active" id="kurzbeschreibung">
+                <div class="row"> 
+                  <div class="col-sm-6 fixmargin">
+                    <img src="../../img/article-7.png">
+                  </div>
+                </div>
+                <br />
+                <p>Geologische und geologierelevante Daten suchen, ansehen, abfragen und herunterladen. Unter map.geologieportal.ch Externe Seite. Inhalt wird in neuem Fenster geöffnet. bietet Ihnen das «Thema Geologie» des Kartenviewers des Geoportals Bund (map.geo.admin.ch Externe Seite. Inhalt wird in neuem Fenster geöffnet.) jetzt diese Funktionen für mehr als 70 Datensätze mit Bezug zur Geologie. Das breite Angebot richtet sich jedoch nicht nur an Spezialisten, sondern auch an Lehrpersonen, Medienschaffende und interessierte Laien.</p> 
+                <h4>Link zum "Thema Geologie":</h4>
+                <p><a href="#" class="icon icon--after icon--external">map.geologieportal.ch</a></p>
+                <br/>
+                <h4>Online-Hilfe von map.geo.admin.ch:</h4>
+                <p><a href="#" class="icon icon--after icon--external">help.geo.admin.ch</a></p>
+                <br/>
+                <h4>Für Fragen und Anregungen:</h4>
+                <p><a href="#" class="icon icon--after icon--external">infogeol@swisstopo.ch</a></p>
+              </div>
+              
+              <div class="tab-pane" id="kartenviewer">in diesem Tab ist nichts (1)</div>
+
+              <div class="tab-pane" id="bundesgeoportale">
+                <div class="row"> 
+                  <div class="col-sm-12">
+                    <h4>Liste der öffentlichen thematischen Bundesgeoportale</h4>
+                    <p>Die Bundesämter betreiben fachspezifische Portale mit thematischen Kartenanwendungen. Ein Teil dieser Applikationen steht auch der Öffentlichkeit zur Verfügung.</p>
+                    <b>Quelle:</b>
+                    <p><a href="#" class="icon icon--after icon--external">www.geo.admin.ch</a></p>
+                  </div>
+                </div>
+
+                <table class="table table-simple">
+                  <thead>
+                    <tr>
+                      <th>Name / Verantwortlichkeit</th>
+                      <th>Beschreibung</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">Cadastralinfo</a></p>
+                        <p>Amtliche Vermessung Schweiz / BA für Landestopografie swisstopo</p>
+                      </td>
+                      <td>
+                        <p>Finden Sie Informationen, Plan und Luftaufnahme zu einem Grundstück mit Hilfe der neuen Anwendung der Amtlichen Vermessung Schweiz.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">Sachpläne</a></p>
+                        <p>BA für Raumentwicklung ARE</p>
+                      </td>
+                      <td>
+                        <p>Die Applikation fasst alle Sachpläne der Bundesverwaltung zusammen</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">Zeitreihen Viewer</a></p>
+                        <p>BA für Landestopografie swisstopo</p>
+                      </td>
+                      <td>
+                        <p>Web-Applikation, die mit den topografischen Karten von swisstopo eine Reise durch die Zeit erlaubt</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">Luftfahrt</a></p>
+                        <p>BA für Zivilluftfahrt BAZL</p>
+                      </td>
+                      <td>
+                        <p>WeGOM (Web GIS Obstacle Map): Als Ergänzung zur gedruckten Luftfahrthinderniskarte 1:100'000 ist mit WeGOM eine interaktive, webbasierte Kartenanwendung verfügbar. Diese präsentiert stets den aktuellen Stand der zu publizierenden Luftfahrthindernisse nach VIL Art. 63 Abs. a/b.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">FPDS Datenviewer</a></p>
+                        <p>BA für Landestopografie swisstopo</p>
+                      </td>
+                      <td>
+                        <p>Visualisierung der Fixpunkte der Landesvermessung und der amtlichen Vermessung</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">Geodaten swisstopo</a></p>
+                        <p>BA für Landestopografie swisstopo</p>
+                      </td>
+                      <td>
+                        <p>Visualisierung der Georeferenzdaten von swisstopo</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><a href="#" class="icon icon--after icon--external">Geologie</a></p>
+                        <p>BA für Landestopografie swisstopo</p>
+                      </td>
+                      <td>
+                        <p>Geologische und geologierelevante Daten suchen, ansehen, abfragen und herunterladen. Unter map.geologieportal.ch bietet Ihnen das «Thema Geologie» des Kartenviewers des Geoportals Bund (map.geo.admin.ch) jetzt diese Funktionen für mehr als 70 Datensätze mit Bezug zur Geologie.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="2">
+                        <p>Die Verantwortung für den Inhalt der Kartenanwendungen liegt beim jeweiligen Bundesamt.</p>
+                        <p>Stand: 07.08.2015</p>
+                      </td>
+                    </tr>
+                  </tfoot> 
+                </table>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}
