@@ -1,0 +1,180 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Geologie-Portal Erze{% endblock %}
+
+{% block breadcrumb %}
+  <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
+    <div class="col-sm-12 fixmargin">
+      <h2 id="br1" class="hidden">Breadcrumbs</h2>
+      <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+        <li><a href="#">Geologie-Portal</a><span class="icon icon--greater"></span></li>
+        <li><a href="#">Über</a><span class="icon icon--greater"></span></li>
+        <li class="active" aria-selected="true">Feedback</li>
+      </ol> 
+    </div> 
+  </div> 
+{% endblock %} 
+
+{% block sidebar %}
+  <div class="col-sm-4 col-md-3 drilldown">
+    <div class="col-sm-12">
+      <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
+      <div class="drilldown-container">
+        <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+          <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Geologie-Portal</a>
+          <ul>
+            <!-- the .list-emphasis class is optionnal --> 
+            <li class="list-emphasis">
+              <span>Über</span>
+              <ul>
+                <!-- add the .list-sub class if the list has some animated sub-lists -->
+                <li><a href="#">Hintergrund</a></li>
+                <li><a href="#">Ziele</a></li>
+                <li><a href="#">Betreiber</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li class="active" aria-selected="true"><a href="#">Feedback</a><span class="sr-only"> active</span></li>
+                <li><a href="#">Disclamer</a></li>
+              </ul>
+            </li> 
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar_right_part1 %}
+{% endblock %}
+{% block sidebar_right_part2 %}
+{% endblock %}
+{% block sidebar_right_part3 %}
+{% endblock %}
+{% block sidebar_right_part4 %}
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-8 fixmargin">
+    <div class="row">
+      <div class="col-sm-12">
+        <article>
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="page-title">Feedback</h1>
+              <figure>
+                <img src="../../img/article-10.png" alt="image description">
+                <figcaption>Kontaktieren Sie uns über das Feedback-Formular!</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-sm-12">
+              <h2>Ihre Meinung ist uns wichtig! - Vermissen Sie einen Inhalt? Möchten Sie Ihre Meinung zum Geologie-Portal äussern? Kontaktieren Sie uns über das Feedback-Formular!</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 fixmargin">
+              <form class="form-horizontal" role="form">
+
+                <fieldset> 
+                  <legend class="hidden-legend">Art der Mitteilung *</legend>
+                  <div class="form-group"> 
+                    <label class="control-label" for="mitteilungsart">
+                      <b>Art der Mitteilung *</b>
+                      <span class="sr-only">This field is required</span>
+                    </label>
+                    <select id="mitteilungsart" class="form-control" aria-labelledby="mitteilungsart" aria-required="true" required>
+                      <option>Wählen Sie hier die Art Ihrer Mitteilung</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset> 
+                  <legend class="hidden-legend">Seitenbezug</legend>
+                  <div class="form-group"> 
+                    <label class="control-label" for="seitenbezug">
+                      <b>Seitenbezug</b>
+                    </label>
+                    <p>Bitte geben Sie an auf welche Seite des Geologie-Portals sich Ihre Mitteilung bezieht.</p>
+                    <select id="seitenbezug" class="form-control">
+                      <option>z.B. Startseite</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend class="hidden-legend">Betreff *
+                  </legend>
+                  <div class="form-group">
+                    <label for="betreff" class="control-label">
+                      <b>Betreff *</b>
+                      <span class="sr-only">This field is required</span>
+                    </label>
+                    <input type="text" class="form-control" id="betreff" placeholder="Bitte ein Betreff eingeben" aria-labelledby="betreff" aria-required="true" required>
+                  </div>
+                </fieldset> 
+                <fieldset>
+                  <legend class="hidden-legend">Ihre Mitteilung *
+                  </legend>
+                  <div class="form-group">
+                    <label for="mitteilung" class="control-label">
+                      <b>Ihre Mitteilung *</b>
+                      <span class="sr-only">This field is required</span>
+                    </label>
+                    <textarea class="form-control" id="mitteilung" placeholder="Bitte ein Betreff eingeben" aria-labelledby="mitteilung" aria-required="true" required rows="5"></textarea>
+                  </div>
+                </fieldset> 
+                <fieldset>
+                  <legend class="hidden-legend">Ihre E-mail-Adresse *
+                  </legend>
+                  <div class="form-group">
+                    <label for="email" class="control-label">
+                      <b>Ihre E-mail-Adresse *</b>
+                      <span class="sr-only">This field is required</span>
+                    </label>
+                    <input type="email" class="form-control" id="email" placeholder="Bitte ein Betreff eingeben" aria-labelledby="email" aria-required="true" required>
+                  </div>
+                </fieldset> 
+                <fieldset>
+                  <legend class="hidden-legend">Sicherheitsprüfung *
+                  </legend>
+                  <div class="form-group">
+                    <label for="sicherheitspruefung" class="control-label">
+                      <b>Sicherheitsprüfung *</b>
+                      <span class="sr-only">This field is required</span>
+                    </label>
+                    <p>
+                      Bitte tippen Sie die Lösung der Rechenaufgabe ein. Sie helfen uns somit Spamattacken zu vermeiden.<br />
+                      <b>5 + 5</b>
+                    </p>
+                    <input type="text" class="form-control" id="sicherheitspruefung" placeholder="" aria-labelledby="sicherheitspruefung" aria-required="true" required>
+                  </div>
+                </fieldset> 
+                <fieldset>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-4 fixmargin">
+                        <p>* = Pflichtfeld</p>
+                      </div> 
+                      <div class="col-sm-8 fixmargin" style="text-align: right;">
+                        <button type="submit" role="button" class="btn btn-secondary">Zurücksetzen</button>
+                        <button type="submit" role="button" class="btn btn-default btn-primary">Mitteilung senden</button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset> 
+
+              </form>
+            </div>
+          </div>
+
+        </article>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

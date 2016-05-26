@@ -126,6 +126,7 @@ address {
     padding-bottom: 0px;
     h3 {
       padding-bottom: 1em;
+      padding-top: 15px;
     }
     ul {
       padding: 0;
@@ -193,6 +194,12 @@ footer {
     }
   }
   @media only screen and (max-width: $screen-xs-max) {
+    h3 {
+      padding-left: 15px;
+    }
+    a {
+      padding-left: 30px;
+    }
     .container-fluid {
       padding: 0px;
     }

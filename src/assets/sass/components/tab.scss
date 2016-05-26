@@ -138,7 +138,17 @@ ul.nav-tabs {
     }
   }
 
-  div[class*="col"],
+  div[class*="col"]{
+    @media only screen and (min-width: $screen-sm-min) {
+      border-bottom: 1px solid $silver;
+      border-right: 1px solid $silver;
+      border-left: 1px solid $silver;
+    }
+    margin: 0 !important;
+    padding: 0 20px;
+    transition: all 0.2s;
+  }
+
   .collapse {
     border-bottom: 1px solid $silver;
     border-right: 1px solid $silver;
