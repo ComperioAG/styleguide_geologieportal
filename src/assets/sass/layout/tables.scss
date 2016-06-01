@@ -143,6 +143,7 @@ tfoot td.active {background: $solitude !important;}
     border-bottom: 3px solid #000;
   }
   tbody tr > th, thead tr > td, thead tr > th {
+    padding-top: 0;
     padding-left: 0;
     border-top: none;
     border-bottom: 3px solid #000 !important;

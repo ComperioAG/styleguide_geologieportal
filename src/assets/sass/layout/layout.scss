@@ -72,6 +72,10 @@ hr {
 
 div[class*=col-] {
   margin-bottom: 60px;
+
+  & > *:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .fixmargin {
