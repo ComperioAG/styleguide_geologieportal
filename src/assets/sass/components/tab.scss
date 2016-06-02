@@ -127,6 +127,9 @@ ul.nav-tabs {
   & > div > div > a[data-toggle="collapse"] {
     border: none !important;
   }
+  & > div > div > div {
+    border: none !important;
+  }
   & > div {
     border-bottom: 1px solid #CCC;
     border-right: 1px solid #CCC;
