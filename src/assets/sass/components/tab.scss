@@ -22,15 +22,21 @@ ul.nav-tabs {
   &.active > a,
   &:active > a:hover,
   &:active > a:focus {
+    line-height: 1.5;
     border-radius: 0;
     box-sizing: border-box;
-    background-color: $B02;
-    color: $empress;
-    border-top: 1px solid $white;
-    border-left: 1px solid $white;
-    border-right: 1px solid $white;
+    //background-color: $B02;
+    border-bottom: 2px solid $B02;
+    //color: $T02;
+    //border-top: 1px solid $white;
+    //border-left: 1px solid $white;
+    //border-right: 1px solid $white;
+    border-top: 0px !important;
+    border-right: 0px !important;
+    border-left: 0px !important;
     margin: 0;
     padding-top: 10px;
+    padding-left: 0px;
   }
 
   + li {
@@ -44,18 +50,20 @@ ul.nav-tabs {
   &.active > a,
   &.active > a:hover,
   &.active > a:focus {
-    color: $T01;
-    background-color: $A03;
+    background-color: #FFF;
+    border-bottom: 4px solid $A01;
   }
 
   &.active > a,
   &.active > a:hover, 
   &.active > a:focus {
+    @extend h4;
+    margin: 0px;
     color: $T01;
-	background-color: $A03;
-	border-top: 1px solid $white;
-	border-left: 1px solid $white;
-	border-right: 1px solid $white;
+  	//background-color: $A01;
+  	//border-top: 1px solid $white;
+  	//border-left: 1px solid $white;
+  	//border-right: 1px solid $white;
     // border-bottom-color: transparent;
     // box-sizing: padding-box;
   }
@@ -74,7 +82,7 @@ ul.nav-tabs {
 
 
 .tab-content {
-  padding: 20px 0;
+  padding: 24px 0px 0px 0px;
 
   .tab-content {
     border: 1px solid $silver;
@@ -86,9 +94,9 @@ ul.nav-tabs {
     // border-right: 1px solid $silver;
     // border-left: 1x solid $silver;
     // border-bottom: 1px solid $silver;
-    padding-left: 1em;
-    padding-right: 1em;
-	background: $B04;
+    //padding-left: 1em;
+    //padding-right: 1em;
+    background: $B04;
   }
 }
 
@@ -101,28 +109,46 @@ ul.nav-tabs {
     border-left: 1px solid $silver;
     font-size: 16px;
     padding: 12px 25px;
-    color: $black;
+    color: $A05;
     transition: all 0.2s;
 
     &:before {
-      color: $black;
+      color: $A05;
     }
-    &:hover {
+    &:hover, &:hover:before {
       text-decoration: none;
+      color: $A04;
     }
     &:first-child {
       border-top: 3px solid $venetian-red;
     }
   }
 
+  & > div > div > a[data-toggle="collapse"] {
+    border: none !important;
+  }
+  & > div > div > div {
+    border: none !important;
+  }
+  & > div {
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+  }
+
   a[data-toggle="collapse"].collapse-closed {
     border-top: 0px solid $white;
     border-bottom: 1px solid $silver;
-    color: $empress;
+    color: $A03;
 
     &:before {
       content: get-font-icon('greater');
-      color: $empress;
+      color: $A03;
+    }
+
+    &:hover, &:hover:before {
+      text-decoration: none;
+      color: $A04;
     }
 
     &:first-child {
@@ -130,7 +156,17 @@ ul.nav-tabs {
     }
   }
 
-  div[class*="col"],
+  div[class*="col"]{
+    @media only screen and (min-width: $screen-sm-min) {
+      border-bottom: 1px solid $silver;
+      border-right: 1px solid $silver;
+      border-left: 1px solid $silver;
+    }
+    margin: 0 !important;
+    padding: 0 20px;
+    transition: all 0.2s;
+  }
+
   .collapse {
     border-bottom: 1px solid $silver;
     border-right: 1px solid $silver;

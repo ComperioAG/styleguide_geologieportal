@@ -17,11 +17,15 @@ results:
   title: Suchergebnisse
 subpage:
   title: Unterseite
-montterri-hauptseite:
-  title: Mont-Terri Hauptseite
-montterri-artikel:
-  title: Mont-Terri Artikel
-montterri-artikelmitsidebar:
-  title: Mont-Terri Artikel mit Sidebar
-montterri-artikelmitbildsidebar:
-  title: Mont-Terri Artikel mit Bild und Sidebar
+geologieportal-hauptseite:
+  title: Geologie-Portal Hauptseite
+geologieportal-grundlagendergeologie:
+  title: Geologie-Portal Grundlagen der Geologie
+geologieportal-wassereis:
+  title: Geologie-Portal Wasser & Eis
+geologieportal-datenviewer:
+  title: Geologie-Portal Datenviewer
+geologieportal-erze:
+  title: Geologie-Portal Erze
+geologieportal-feedback:
+  title: Geologie-Portal Feedback

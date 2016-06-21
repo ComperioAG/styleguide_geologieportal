@@ -19,6 +19,17 @@
     border-left: 1px solid $silver;
     margin-top: 0;
 
+    > li {
+      > a,
+      > a:hover,
+      > a:focus,
+      &.active > a,
+      &:active > a:hover,
+      &:active > a:focus {
+        padding-left: 15px;
+      }
+    }
+
     &:after {
       content: '';
       display: block;
@@ -53,12 +64,14 @@
         border: none;
         box-sizing: border-box !important;
         padding-bottom: 10px;
-        font-size: 1.07142857rem;
-        line-height: 1.1em;
         text-align: left;
         border-radius: 0;
-        color: $night-rider;
         overflow: hidden;
+
+        font-size: 0.875em !important;
+        line-height: 1.285 !important;
+        font-weight: normal !important;
+        color: $night-rider !important;
 
         &:after {
           content: '';
@@ -78,7 +91,7 @@
       &.active > a:hover,
       &.active > a:focus {
         //color: $venetian-red;
-        background-color: $A03;
+        background-color: $A01;
 
         &::before {
           content: '';
@@ -112,12 +125,12 @@
       &.active a:hover {
         border: none !important;
         background: $gainsboro;
-        color: $black;
+        color: $T02;
       }
 
       &:hover a {
         padding-top: 10px !important; // override nav-tabs behaviour
-		    background: $A03;
+		    background: $A01;
       }
     }
   }
@@ -126,6 +139,10 @@
     padding: 0px 15px 0px 0px;
     border-bottom: none;
     // border-top: 1px solid $silver;
+    p {
+      //font-size: 0.875em;
+      //line-height: 1.285;
+    }
 
     h2 {
       font-weight: 700;

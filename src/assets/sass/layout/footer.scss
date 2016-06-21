@@ -29,7 +29,7 @@ footer {
     min-width: 200px;
   }
   a {
-    line-height: 2em;
+    //line-height: 2em;
   }
   h3 {
     margin: 0;
@@ -65,6 +65,7 @@ address {
   display: table-cell;
   width: 10000px;
   font-size: 1em;
+  background-color: $B04;
 
   // border-top: 1px solid $white;
   margin-bottom: 0;
@@ -85,9 +86,8 @@ address {
 }
 
 .site-map {
-  div[class*=col-] {
-    padding-left: 30px;
-    padding-right: 30px;
+  > .container-fluid {
+    padding-top: 15px;
   }
   @media only screen and (max-width: $screen-xs-max) {display: none;}
   position: relative;
@@ -115,7 +115,7 @@ address {
   a {
     //font-size: 13px;
     display: inline-block;
-    padding: 3px 0;
+    padding: 10px 0;
   }
 }
 
@@ -126,6 +126,7 @@ address {
     padding-bottom: 0px;
     h3 {
       padding-bottom: 1em;
+      padding-top: 15px;
     }
     ul {
       padding: 0;
@@ -168,14 +169,12 @@ footer {
 
 .social-and-links {
   h3 {
-    color: $A04;
+    color: $T02;
     padding-top: 0px;
     padding-bottom: 15px;
   }
   div[class*=col-] {
     margin-bottom: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
   @media only screen and (max-width: $screen-sm-max) {
     h3 {
@@ -190,11 +189,22 @@ footer {
   }
   @media only screen and (min-width: $screen-sm-min) {
     address {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
   @media only screen and (max-width: $screen-xs-max) {
+    h3 {
+      padding-left: 15px;
+    }
+    a {
+      padding-left: 30px;
+    }
+    address a {
+      padding-left: 10px;
+    }
+
+
     .container-fluid {
       padding: 0px;
     }

@@ -1,13 +1,21 @@
 .imgtopic {
-  padding: 15px 15px;
+  padding: 15px 15px 5px 15px;
   background-color: $B04;
   h3 {
   	margin-top:0px;
   }
 }
 
-article > p:last-child {
-	margin-bottom: 0px;
+article {
+	div[class*=col-] {
+	  margin-bottom: 40px;
+	}
+	p:last-child {
+		margin-bottom: 0px;
+	}
+	figcaption {
+		margin-bottom: 0px;
+	}
 }
 
 .topic {
@@ -19,11 +27,7 @@ article > p:last-child {
 	}
 }
 
-.sidebar-right-contact {
-	background-color: $B04;
-	h2 {
-		margin-top: 15px;
-	}
+.sidebar-right {
 	h4 {
 		margin-top: 0px;
 	}
@@ -33,5 +37,66 @@ article > p:last-child {
 	&.row {
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+	p {
+		margin: 0px;
+	}
+	a {
+		margin-top: 10px;
+		display: inline-block;
+	}
+	div[class*=col-] {
+		background-color: $B03;
+		padding: 15px;
+	}
+	
+	.list-group {
+		margin: -15px;
+		.list-group-header {
+			background-color: $B04;
+		}
+		.row, div[class*=col-] {
+			margin: 0px;
+			padding: 0px;
+		}
+		.imgtopic {
+			background-color: $B03;
+			padding: 5px 15px 15px 15px;
+		}
+	}
+}
+
+.article-contact {
+	p, address {
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+.themen {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	a img {
+		&:last-child {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+
+			opacity: 1;
+			@include backface-visibility(hidden);
+			@include transition(.5s);
+			&:hover {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.strichzeichnung {
+	padding: 0px !important;
+	background-color: transparent !important;
+	h1 {
+		visibility: hidden;
 	}
 }

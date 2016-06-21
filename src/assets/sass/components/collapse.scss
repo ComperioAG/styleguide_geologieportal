@@ -3,14 +3,14 @@
 }
 
 .collapsing, .collapse.in {
-  margin-left: 1.2em;
+  margin-top: 10px;
 }
 
 .collapse-box {
   padding: 0.8em;
   background: $smoke;
   > a.active {
-    color: $A01;
+    color: $A04;
   }
 }
 
@@ -23,14 +23,14 @@ a[data-toggle="collapse"] {
     @extend .icon--greater;
   }
   &.active {
-    color: $A01;
+    color: $A04;
   }
 }
 
 .drilldown a[data-toggle="collapse"] {
   padding: 0 10px 10px 10px;
   &[aria-expanded="true"] {
-    color: $A01;
+    color: $A04;
   }
 }
 

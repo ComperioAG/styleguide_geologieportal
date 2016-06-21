@@ -10,7 +10,7 @@
  ========================================================== */
 
 .form-search {
-  margin-top: 30px;
+  margin-top: 20px;
   display: inline-block;
   position: relative;
   @media only screen and (max-width: $screen-sm-max) {
@@ -34,7 +34,7 @@
     z-index: 999;
     &:hover {
       cursor: pointer;
-	  color: $A01;
+	  color: $A03;
     }
   }
   .icon--search {left: 3px;}
@@ -57,7 +57,9 @@
   &:focus {width: 200px;}
 }
 
-.search-field:focus + .icon--close:after {color: $B01;}
+.search-field:focus, .search-field:focus + .icon--close:after { 
+  color: $A03; 
+}
 
 /* Remove X button in IE10 */
 .search-field::-ms-clear { display: none; }

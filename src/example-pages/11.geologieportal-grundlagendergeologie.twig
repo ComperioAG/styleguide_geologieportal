@@ -1,0 +1,120 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Geologie-Portal Grundlagen der Geologie{% endblock %}
+
+{% block breadcrumb %}
+  <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
+    <div class="col-sm-12 fixmargin">
+      <h2 id="br1" class="hidden">Breadcrumbs</h2>
+      <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+        <li><a href="#">Geologie-Portal</a><span class="icon icon--greater"></span></li>
+        <li class="active" aria-selected="true">Grundlagen der Geologie</li>
+      </ol> 
+    </div> 
+  </div>
+{% endblock %} 
+
+{% block sidebar %}
+  <div class="col-sm-4 col-md-3 drilldown">
+    <div class="col-sm-12">
+      <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
+      <div class="drilldown-container">
+        <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+          <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Geologie-Portal</a>
+          <ul>
+            <!-- the .list-emphasis class is optionnal --> 
+            <li class="list-emphasis active" aria-selected="true">
+              <span>Grundlagen der Geologie <span class="sr-only"> active</span></span>
+              <ul>
+                <!-- add the .list-sub class if the list has some animated sub-lists -->
+                <li><a href="#">Tektonik / Strukturgeologie</a></li>
+                <li><a href="#">Geophysik</a></li>
+                <li><a href="#">Geotechnik & Ingenieurgeologie</a></li>
+                <li><a href="#">Quartärgeologie</a></li>
+                <li><a href="#">3D-Geologie</a></li>
+                <li><a href="#">Bohrungen</a></li>
+                <li><a href="#">Geologische Kartografie</a></li>
+                <li><a href="#">Stratigraphie</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block strichzeichnunglink %}../../img/article-2.png{% endblock %}
+{% block sidebar_right_part2 %}
+{% endblock %}
+{% block sidebar_right_part4 %}
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-8 fixmargin">
+    <div class="row">
+      <div class="col-sm-12 fixmargin">
+        <article>
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="page-title">Grundlagen der Geologie</h1>
+              <figure>
+                <img src="../../img/article-1.png" alt="image description">
+                <figcaption>Die traditionellen Arbeitsinstrumente des Geologen: Hammer, Feldbuch und Lupe.<br/>
+                (© Greg van der Bleeken)</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-sm-12">
+              <h4>Welche Disziplinen gehören zur Geologie? Wer befasst sich mit dem tiefen Untergrund, mit Erdbau oder Erdgeschichte? Wo stehen physikalische oder chemische Eigenschaften im Vordergrund, wo Oberflächenprozesse, wo die Interaktion mit dem Lebensraum?</h4>
+
+              <p>Verschaffen Sie sich den Überblick: Von der Geophysik über die Hydrogeologie bis zur Paläontologie finden Sie hier grundlegende Informationen. Erfahren Sie mehr über Ziele, Fragestellungen und Arbeitsmethoden der einzelnen Fachgebiete. Und wenn Sie mehr wissen möchten: Datenbanken und Kontaktadressen nennen wir Ihnen ebenfalls auf unseren Seiten.</p> 
+            </div>
+          </div>
+        </article>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><a href="#">Tektonik / Strukturgeologie</a></h3>
+            <p>Im Inneren unserer Erde wirken seit jeher enorme Kräfte. Sie verformen die Erdkruste kontinuierlich und beeinflussen ihren strukturellen Aufbau. Tektonische Karten zeigen, wie die Schweiz geologisch aufgebaut ist.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3><a href="#">Geophysik</a></h3>
+            <p>Die Geophysik befasst sich mit allen die Erde betreffenden physikalischen Erscheinungen. Sie umfasst verschiedenste Teilgebiete und lässt sich nach Forschungsmethoden und deren Anwendungsbezug unterteilen.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><a href="#">Geotechnik & Ingenieurgeologie</a></h3>
+            <p>Die Geotechnik vereint als Ingenieurwissenschaft Elemente der Geowissenschaften, des Bauwesens und des Bergbaus. Tunnelprojekte, Hangsicherungen oder Baugrunduntersuchungen sind typische Einsatzgebiete.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3><a href="#">Quartärgeologie</a></h3>
+            <p>Das Quartär ist der jüngste Zeitabschnitt der Erdgeschichte: Die letzten 2,6 Millionen Jahre. Es ist gekennzeichnet durch die Erscheinung der Mensch sowie wiederholte Eiszeit/Warmzeit Zyklen, welche die Gebirge und deren Umfeld stark beeinflussten.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><a href="#">3D-Geologie</a></h3>
+            <p>Geologische 3D-Modelle stellen für die Infrastruktur- und Raumplanung einen zentralen Lösungsansatz dar. Die räumliche Darstellung bietet viele Vorteile.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3><a href="#">Bohrungen</a></h3>
+            <p>Bohrungen vermitteln Informationen über die Beschaffenheit des Untergrunds. Oder sie dienen einem konkreten Nutzen: beispielsweise zur
+Erdgasförderung oder als Vorbereitung für Baumassnahmen.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h3><a href="#">Geologische Kartografie</a></h3>
+            <p>Geologische Karten stellen eine Vielzahl geologisch relevanter Informationen übersichtlich dar. Sie sind eine wichtige Grundlage für geotechnische und umweltrelevante Entscheidungen.</p>
+          </div>
+          <div class="col-sm-6">
+            <h3><a href="#">Stratigraphie</a></h3>
+            <p>Stratigraphie befasst sich als geologische Disziplin mit der räumlichen Lage und zeitlichen Abfolge von Gesteinskörpern. Mittels Stratigraphie werden Gesteinskörper datiert und untereinander korreliert.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

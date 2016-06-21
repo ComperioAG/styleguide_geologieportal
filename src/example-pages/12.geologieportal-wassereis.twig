@@ -1,0 +1,123 @@
+{% extends "layout.twig" %}
+
+{% block pagetitle %}Geologie-Portal Wasser & Eis{% endblock %}
+
+{% block breadcrumb %}
+  <div class="container-fluid hidden-xs {% block backgroundcolor %}background-white{% endblock %}">
+    <div class="col-sm-12 fixmargin">
+      <h2 id="br1" class="hidden">Breadcrumbs</h2>
+      <ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+        <li><a href="#">Geologie-Portal</a><span class="icon icon--greater"></span></li>
+        <li><a href="#">Geologische Gefahren</a><span class="icon icon--greater"></span></li>
+        <li class="active" aria-selected="true">Wasser & Eis</li>
+      </ol> 
+    </div> 
+  </div>
+{% endblock %} 
+
+{% block sidebar %}
+  <div class="col-sm-4 col-md-3 drilldown">
+    <div class="col-sm-12">
+      <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs">Sub-Navigation</a>
+      <div class="drilldown-container">
+        <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+          <a href="#" class="icon icon--before icon--less"><span class="sr-only">Back to </span>Geologie-Portal</a>
+          <ul>
+            <!-- the .list-emphasis class is optionnal --> 
+            <li class="list-emphasis">
+              <span>Geologische Gefahren </span>
+              <ul>
+                <!-- add the .list-sub class if the list has some animated sub-lists -->
+                <li><a href="#">Erdbeben</a></li>
+                <li><a href="#">Steinschlag, Rutschungen ...</a></li>
+                <li class="active" aria-selected="true"><a href="#">Wasser & Eis</a><span class="sr-only"> active</span></li>
+                <li><a href="#">Natürliche Umweltbelastungen</a></li>
+                <li><a href="#">Antropogene Umweltbelastung</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block strichzeichnunglink %}../../img/article-4.png{% endblock %}
+{% block sidebar_right_part1 %}
+{% endblock %}
+{% block sidebar_right_part4 %}
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-8 fixmargin">
+    <div class="row">
+      <div class="col-sm-12 fixmargin">
+        <article>
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="page-title">Wasser & Eis</h1>
+              <figure>
+                <img src="../../img/article-3.png" alt="image description">
+                <figcaption>Überschwemmung in Thun, 2005. (&copy; PLANAT)</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-sm-12">
+              <h4>Ob flüssig oder gefroren: Wasser kann zu einer Vielfalt von Naturgefahren führen.</h4>
+            </div>
+          </div>
+        </article>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#kurzbeschreibung" data-toggle="tab">Kurzbeschreibung</a></li>
+              <li><a href="#whoiswho" data-toggle="tab">Who is who</a></li>
+              <li><a href="#daten" data-toggle="tab">Daten</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-border">
+              <div class="tab-pane active" id="kurzbeschreibung">
+                <b>Gefährdungen durch Hochwasser</b> 
+                <p>Bei einem Hochwasser überschreiten Wasserstand oder Wassermenge eines Gewässers einen bestimmten Schwellenwert. Typische Ursachen sind intensiver oder langandauernder Regen und/oder Schneeschmelze. Die Wassermassen können rasch zunehmen und Sand oder Geröll enthalten. In steilen Gerinnen, wie in Wildbächen in den Bergen, dominieren intensive Geschiebeumlagerungen und -ablagerungen aus Sand und Geröll. Es kommt zu Übermurungen, Ufererosionen und Übersarungen.</p>
+                <b>Murgänge</b>
+                <p>Ein Murgang ist ein talwärts fliessender Strom aus Schlamm und gröberem Gestein. Murgänge treten nur in Wildbachgebieten mit meist über 15 Prozent Bachgefälle auf.</p>
+                <p>Typisch für Murgänge: die hohe Dichte, die oft hohe Fliessgeschwindigkeit und die gewaltige Transportkapazität. Ein Murgang kann ganze Bäume und Blöcke von mehreren Kubikmetern Volumen mitführen und grosse Schäden anrichten.</p>
+                <b>Überschwemmungen, Ufer- und Sohlenerosion</b>
+                <p>Flachere Gewässer im Tal gefährden durch Überschwemmungen. Auch Ufer und Sohlenerosion können auftreten. Sie führen zu Unterspülungen oder zu Sohlenauflandungen. Überschwemmungen werden gefährlich, wenn im Überflutungsbereich grosse Wassertiefen oder starke Strömungen auftreten. Dabei kann auch viel Geschiebe abgelagert werden.</p>
+                <p>Stark strömendes Wasser kann Feststoffe vom Ufer oder von der Gerinnesohle aufnehmen und transportieren. Der Gerinnelauf wird folglich verlagert. Uferrutschungen können Bauwerke und Anlagen am Gewässer gefährden. Das mitgeschleppte Geschiebe beschädigt oft Kulturland und Bauten.</p>
+                <a href="#" class="icon icon--before icon--greater">mehr lesen</a>
+              </div> 
+              <div class="tab-pane" id="whoiswho">in diesem Tab ist nichts (1)</div>
+              <div class="tab-pane" id="daten">in diesem Tab ist nichts (2)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Links</h2>
+
+            <h4>Hochwasser und Murgänge</h4>
+            <p><a href="#" class="icon icon--after icon--external">Bundesamt für Umwelt</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Nationale Plattform Naturgefahren</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Eidg. Forschungsanstalt für Wald, Schnee und Landschaft</a></p>
+            <br/> 
+            <h4>Hochwasser und Murgänge</h4> 
+            <p><a href="#" class="icon icon--after icon--external">Bundesamt für Umwelt</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Swiss Permafrost Monitoring Network</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Expertenkommission Kryosphäre</a></p>
+            <p><a href="#" class="icon icon--after icon--external">PermaNET</a></p>
+            <br/>
+            <h4>Gletscher</h4> 
+            <p><a href="#" class="icon icon--after icon--external">Versuchsanstalt für Wasserbau, Hydrologie und Glaziologie, ETHZ</a></p>
+            <p><a href="#" class="icon icon--after icon--external">Geographisches Institut der Universität Zürich</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
