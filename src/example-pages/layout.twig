@@ -420,7 +420,16 @@ layout: empty
             {% block sidebar_right %}
               <div class="col-md-4 fixmargin">
                 <div class="row sidebar-right">
-                  
+
+                  {% block sidebar_right_partStrichzeichnung %}
+                    <!-- Part Strichzeichnung -->
+                    <div class="col-sm-12 strichzeichnung hidden-xs hidden-sm">
+                      <h1>&nbsp;</h1>
+                      <img src="{% block strichzeichnunglink %} {% endblock %}" alt="Image description">
+                    </div>
+                    <!-- End Strichzeichnung -->
+                  {% endblock %}
+
                   {% block sidebar_right_part1 %}
                     <!-- Part 1 -->
                     <div class="col-sm-12">
